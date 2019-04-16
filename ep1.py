@@ -2,7 +2,7 @@
 #
 # Estudantes: 
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
-# - aluno B: Sicrano de Almeida, sicranoa1@insper.edu.br
+# - aluno B: Marcos Vinínius da Silva, marcosvs3@al.insper.edu.br
 
 def carregar_cenarios():
     cenarios = {
