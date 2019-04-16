@@ -1,6 +1,6 @@
 ﻿# EP 2019-1: Escape Insper
 #
-# Estudantes: 
+# Alunos: 
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
 # - aluno B: Marcos Vinínius da Silva, marcosvs3@al.insper.edu.br
 
