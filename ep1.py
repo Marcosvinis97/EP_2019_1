@@ -42,7 +42,7 @@ def carregar_cenarios():
 
 
 def main():
-    print("Na hora do sufoco!")
+    print("Na hora do sufoco!!")
     print("------------------")
     print()
     print("Parecia uma boa idéia: vou só jogar um pouquinho/assistir Netflix/"
