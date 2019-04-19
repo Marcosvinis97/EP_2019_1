@@ -7,8 +7,8 @@
 #introdução
 nome = input("Olá! Qual o seu nome? " )
 print()
-print("Bem-vindo(a), {0}! Está preparado para uma grande aventura?\nAproveite o jogo e ... cuidado com suas escolhas, "
-      "elas podem te levar para longe...".format(nome))
+print("Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\nAproveite o jogo e ... cuidado com suas escolhas, "
+      "pois elas podem te levar para longe!".format(nome))
 enter = input("Aperte enter para continuar")
 print()
 
@@ -50,15 +50,20 @@ def carregar_cenarios():
 
 
 def main():
-    print("Na hora do sufoco!!")
+    print("Na hora do sufoco!")
     print("------------------")
     print()
-    print("Parecia uma boa idéia: vou só jogar um pouquinho/assistir Netflix/"
-        "embaçar em geral. Amanhã eu começo o EP. Mas isso não deu certo...")
+    print("Parecia uma ideia boa: Vou só assistir um novo episódio de "
+         "'La casa de papel' enquanto espero o horário de ir para o Insper. "
+         "Mas, certamente, isso não deu muito certo...")
     print()
-    print("É o dia de entregar o EP e você está muuuuito atrasado! Você está "
-        "na entrada do Insper, e quer procurar o professor para pedir um "
-        "adiamento do EP (boa sorte...)")
+    print("Ao olhar o grupo do Whatsapp da sala, notou que haviam muitas"
+          " mensagens no grupo e isso poderia significar duas coisas: Perigo ou"
+          " zoeira. Infelizmente, não era a segunda opção... Você leu as "
+          "mensagens e lembrou que havia um EP para entregar! E não somente "
+          "isso: estava em casa e precisava chegar o quanto antes para entregar"
+          " seu trabalho, pois o professor não aceitaria atrasos. Boa sorte! Pois"
+          " os desafios estão apenas começando...")
     print()
 
     cenarios, nome_cenario_atual = carregar_cenarios()
