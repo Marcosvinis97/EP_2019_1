@@ -54,10 +54,10 @@ def main():
     print("------------------")
     print()
     print("Parecia uma ideia boa: Vou só assistir um novo episódio de "
-         "'La casa de papel' enquanto espero o horário de ir para o Insper. "
+         "'La Casa de Papel' enquanto espero o horário de ir para o Insper. "
          "Mas, certamente, isso não deu muito certo...")
     print()
-    print("Ao olhar o grupo do Whatsapp da sala, notou que haviam muitas"
+    print("Ao olhar o grupo do Whatsapp da sala, você notou que haviam muitas"
           " mensagens no grupo e isso poderia significar duas coisas: Perigo ou"
           " zoeira. Infelizmente, não era a segunda opção... Você leu as "
           "mensagens e lembrou que havia um EP para entregar! E não somente "
