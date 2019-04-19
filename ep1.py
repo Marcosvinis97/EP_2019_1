@@ -4,6 +4,14 @@
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
 # - aluno B: Marcos Vinínius da Silva, marcosvs3@al.insper.edu.br
 
+#introdução
+nome = input("Olá! Qual o seu nome? " )
+print()
+print("Bem-vindo(a), {0}! Está preparado para uma grande aventura?\nAproveite o jogo e ... cuidado com suas escolhas, "
+      "elas podem te levar para longe...".format(nome))
+enter = input("Aperte enter para continuar")
+print()
+
 def carregar_cenarios():
     cenarios = {
         "inicio": {
