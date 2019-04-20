@@ -9,58 +9,113 @@
 #INÍCIO DA INTRODUÇÃO
 RED   = "\033[1;31m" 
 RESET = "\033[0;0m"
-GREEN = "\033[0;32m"
 
-print(RED + "Olá Gamer!" + RESET)
-print(GREEN + "Qual é o seu nome?" + RESET)
+print(RED + "Olá, Gamer!" + RESET)
+print(RED + "Qual é o seu nome?" + RESET)
 nome = input() #Indentificando o gamer;
 print()
 
-print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\n"
+print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá preparado(a) para uma grande aventura?!\n"
       "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
-      "te levar para muuuito longe!" .format(nome)  + RESET) #Boas vindas ao gamer;
+      "te levar para muuuito longe!" + RESET) #Boas vindas ao gamer;
 
-enter = input(GREEN + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
 print()
 #FIM DA INTRODUÇÃO
 
+#INÍCIO FUNÇÃO CENÁRIOS
 def carregar_cenarios():
     cenarios = {
-        "inicio": {
-            "titulo": "Saindo de casa!",
-            "descricao": "Você esta no portão de casa e deve decidir qual é a opção mais rápida de chegar até o Insper.",
+        "INICIO": {
+            "titulo": "É HORA DE DAR NO PÉ",
+            "descricao": "Você esta no portão de casa e deve decidir qual é a melhor opção para chegar até o Insper.",
             "opcoes": {
-                "ir de bike": "Você chegará ao Insper muito sujo, mas chegará!",
-                "pedir um uber": "Está em horário de pico: pense bem!"
+                "UBER": "texto", #PODE SER A MAIS RÁPIDA/MAIS LENTA(TRANSITO)/MAIS SEGURA(CARRO BLINDADO)
+                "BIKE": "texto", #MAIS RAPIDA(DESVIA DO TRANSITO)/ALUNO FEDIDO E CANSADO(PROFESSOR NÃO ATENDE ALUNOS FEDIDOS)
+                "CAMINHANDO": "texto", #MAIS PERIGOSA/ALUNO NÃO CHEGA FEDIDO   
+                "DESISTO": "texto" #DESANIMO
             }
         },
-        "ir de bike": {
-            "titulo": "A hora do Rush!",
-            "descricao": "Você está na rua",
+        "UBER": {
+            "titulo": "É HORA DO RUSH",
+            "descricao": "A cidade está um caos e o motorista do Uber escolheu o pior caminho possível. Se continuar assim, você chegara no Insper após o seu fechamento.",
             "opcoes": {
-                "inicio": "Desça da bike e volte andando para casa",
-                "usar potencia total": "Pedale o mais rápido possível!"
+                "BIKE": "texto", #MAIS RAPIDA(DESVIA DO TRANSITO)/ALUNO FEDIDO E CANSADO(PROFESSOR NÃO ATENDE ALUNOS FEDIDOS)
+                "CAMINHANDO": "texto", #MAIS PERIGOSA/ALUNO NÃO CHEGA FEDIDO 
+                "DESISTO": "texto" #DESANIMO
             }
         },
-        "usar potencia total": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
+        "BIKE": { 
+            "titulo": "A FENDA",
+            "descricao": "Você pedalou rão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo.",
+            "opcoes": { 
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
+            } 
+        },
+        "CAMINHANDO": {
+            "titulo": "MOTORISTA TRANQUILO",
+            "descricao": "Você pediu um uber, mas o motorista tem medo de ser multado por limite de velocidade...",
+            "opcoes": {
+                "inicio": "Fugir do carro no primeiro sinal vermelho e voltar correndo para casa!"
+            }
+        },
+        "4": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
             "titulo": "A fenda",
             "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
             "opcoes": { 
                 "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
                 "opcao2" : "comentario2",
                 "opcao3" : "..."
-                    } #aí só Jesus na causa
+            } 
         },
-        "pedir um uber": {
-            "titulo": "Motorista tranquilo",
-            "descricao": "Você pediu um uber, mas o motorista tem medo de ser multado por limite de velocidade...",
-            "opcoes": {
-                "inicio": "Fugir do carro no primeiro sinal vermelho e voltar correndo para casa!"
-            }
+        "5": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
+            "titulo": "A fenda",
+            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+            "opcoes": { 
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
+            } 
+        },
+        "6": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
+            "titulo": "A fenda",
+            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+            "opcoes": { 
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
+            } 
+        },
+        "7": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
+            "titulo": "A fenda",
+            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+            "opcoes": { 
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
+            } 
+        },
+        "8": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
+            "titulo": "A fenda",
+            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+            "opcoes": { 
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
+            } 
+        },
+        "DESISTO": { 
+            "titulo": "FRACOTE",
+            "descricao": "Pobre {0}!" .format(nome),
+            "opcoes": { 
+            } 
         }
     }
-    nome_cenario_atual = "inicio"
+    nome_cenario_atual = "INICIO"
     return cenarios, nome_cenario_atual
+#FIM FUNÇÃO CERNÁRIOS
 
 def carrega_monstros():
     personagens = {
@@ -95,7 +150,7 @@ def main():
           "isso: estava em casa e precisava chegar o quanto antes para entregar"
           " seu trabalho, pois o professor não aceitaria atrasos." + RESET)
     print()
-    print(BLUE + "Boa sorte! Pois os desafios estão apenas começando..." + RESET)
+    print(RED + "Boa sorte! Pois os desafios estão apenas começando..." + RESET)
     print()
     
     # Dicionário - Início;
@@ -116,20 +171,20 @@ def main():
         # Opções do gamer no cenário atual;
         opcoes = cenario_atual['opcoes']
         if len(opcoes) == 0: # O jogo termina para o gamer;
-            print(RED + "Acabaram-se suas opções! Mwo mwo mwooooo..." + RESET)
+            print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
             print()
             game_over = True
             
         else:
-            print(RED + "Escolha sua opção:" + RESET)
             print()
-            
+            print(RED + "Escolha sua opção:" + RESET)
+
             for escolha in opcoes:
                 print(RED + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
                 
-            print()    
+            print()
             print(RED + "E então, o que vai fazer?!?" + RESET)
-            escolha = input(RED + "Digite o número da sua escolha:\n" + RESET)
+            escolha = input(RED + "Digite sua escolha: " + RESET)
             
             #O jogo continua para o gamer;
             if escolha in opcoes:
@@ -141,7 +196,7 @@ def main():
                 print()
                 game_over = True
 
-    print(RED + "Você morreu!" + RESET)
+    print(RED + "Infelizmente {0}, você morreu!" .format(nome) + RESET)
 
 # Programa principal.
 if __name__ == "__main__":
