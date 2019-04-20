@@ -76,29 +76,30 @@ def carregar_cenarios():
             "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
             " por monstros!",
             "opcoes": { 
-                "PEGAR O ELEVADOR" : "Ande devagar, pois o local está escuro.",
+                "PEGAR ELEVADOR" : "Ande devagar, pois o local está escuro.",
                 "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele.",
             } 
         },
-        "PEGAR O ELEVADOR": {
+        "PEGAR ELEVADOR": {
             "titulo": "ELEVADOR DA MORTE",
             "descricao": "Você está dentro do elevador, mas ele só consegue te"
             " levar para o 3° andar, onde fica o FabAlien. Caso aperte outro botão,"
-            "o elevador despenca e vc perder o jogo. Mas, para isso, é necessário "
-            "acertar a charada: qual o nome correto do professor de desoft? ",
+            "o elevador despenca e vc perder o jogo. Mas, para seguir em frente, é necessário "
+            "acertar a pergunta: como se escreve, corretamente, o nome do professor"
+            " de desoft? ",
             "opcoes": { 
-                "FABYO AIRES" : "",
-                "FABIO AYRES" : "",
-                "DESISTO" : "Muito complexo"
+                "FABYO AIRES" : "Será?",
+                "FABIO AYRES" : "Será?",
+                "DESISTO" : "Nome muito complexo!"
             } 
         },
         "FABYO AIRES": { 
-            "titulo": "VOCÊ MORREU!",
+            "titulo": "UMA PENA!",
             "descricao": "Não foi dessa vez!",
             "opcoes": { 
             } 
         },
-        "BIBLIOTECA": { 
+        "FABIO AYRES": { 
             "titulo": "texto",
             "descricao": "texto",
             "opcoes": { 
