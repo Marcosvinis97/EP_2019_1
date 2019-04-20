@@ -87,7 +87,6 @@ def main():
     while not game_over:
         #Apresentando cenarios
         cenario_atual = cenarios[nome_cenario_atual]
-        
        #titulo do cenário com os traços embaixo
         titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
         print(titulo_cenario)
