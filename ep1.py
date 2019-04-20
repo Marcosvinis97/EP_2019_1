@@ -6,24 +6,31 @@
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
 # - aluno B: Marcos Vinícius da Silva, marcosvs3@al.insper.edu.br
 
-#início da INTRODUÇÃO
+#INÍCIO DA INTRODUÇÃO
 RED   = "\033[1;31m" 
 RESET = "\033[0;0m"
 
-print(RED + "Olá, Gamer!\nQual é o seu nome?" + RESET) 
-nome = input() #Indentificando o jogador;
+print(RED + "Olá, GAMER!\nQual é o seu nome?" + RESET) 
+
+#Indentificando o gamer;
+nome = input()
 print()
 
-print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\nAproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem te levar para muuuito longe!" .format(nome)  + RESET)
-enter = input(RED + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
+#Boas vindas ao gamer;
+print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\n"
+      "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
+      "te levar para muuuito longe!" .format(nome)  + RESET)
+
+#Iniciando o Jogo;
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET)
 print()
-#Fim da INTRODUÇÃO
+#FIM DA INTRODUÇÃO
 
 def carregar_cenarios():
     cenarios = {
         "inicio": {
-            "titulo": "Sala de estar",
-            "descricao": "Voce esta na sala de estar da sua casa",
+            "titulo": "Saindo de casa!",
+            "descricao": "Você esta no portão de casa e deve decidir qual é a opção mais rápida de chegar até o Insper.",
             "opcoes": {
                 "ir de bike": "Você chegará ao Insper muito sujo, mas chegará!",
                 "pedir um uber": "Está em horário de pico: pense bem!"
@@ -70,30 +77,37 @@ def carrega_monstros():
 
 
 def main():
-    print("Na hora do sufoco!")
-    print("------------------")
+    BLUE  = "\033[1;34m"
+    RED   = "\033[1;31m" 
+    RESET = "\033[0;0m"
+    
+    #Contextualizando o início do jogopara o gamer;        
+    print(BLUE + "Na hora do sufoco!" + RESET)
+    print(BLUE + "------------------" + RESET)
     print()
-    print("Parecia uma ideia boa: Vou só assistir um novo episódio de "
+    print(RED + "Parecia uma ideia boa: Vou só assistir um novo episódio de "
          "'La Casa de Papel' enquanto espero o horário de ir para o Insper. "
-         "Mas, certamente, isso não deu muito certo...")
+         "Mas, certamente, isso não deu muito certo..." + RESET)
     print()
-    print("Ao olhar o grupo do Whatsapp da sala, você notou que haviam muitas"
+    print(RED + "Ao olhar o grupo do Whatsapp da sala, você notou que haviam muitas"
           " mensagens no grupo e isso poderia significar duas coisas: Perigo ou"
           " zoeira. Infelizmente, não era a segunda opção... Você leu as "
           "mensagens e lembrou que havia um EP para entregar! E não somente "
           "isso: estava em casa e precisava chegar o quanto antes para entregar"
-          " seu trabalho, pois o professor não aceitaria atrasos. Boa sorte! Pois"
-          " os desafios estão apenas começando...")
+          " seu trabalho, pois o professor não aceitaria atrasos." + RESET)
     print()
-    #Retornando os dicionários
+    print(BLUE + "Boa sorte! Pois os desafios estão apenas começando..." + RESET)
+    print()
+    
+    #Retornando aos Dicionários - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
 
     game_over = False
-    #enquanto não for fim de jogo:
     while not game_over:
         #Apresentando cenarios
         cenario_atual = cenarios[nome_cenario_atual]
-       #titulo do cenário com os traços embaixo
+        
+        #Título do cenário atual;
         titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
         print(titulo_cenario)
         print("-"*len(titulo_cenario))
@@ -121,12 +135,12 @@ def main():
                 nome_cenario_atual = escolha
                 
                 
-                
+            #Termina o jogo para o gamer;   
             else:
-                print("Sua indecisão foi sua ruína!")
+                print(RED + "Sua indecisão foi sua ruína!" + RESET)
                 game_over = True
 
-    print("Você morreu!")
+    print(RED + "Você morreu!" + RESET)
 
 # Programa principal.
 if __name__ == "__main__":
