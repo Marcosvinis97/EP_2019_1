@@ -60,7 +60,7 @@ def carregar_cenarios():
             "descricao": "texto",
             "opcoes": {
                 "BIKE": "texto",
-                "DESISTIR": "texto
+                "DESISTIR": "texto"
             }
         },
         "UNIVERSO PARALELO": {
@@ -107,7 +107,8 @@ def carregar_cenarios():
                 "OPÇÃO" : "texto",
                 "DESISTIR" : "texto"
             }
-        "SUBSOLO": { 
+        },
+        "GARAGEM": { 
             "titulo": "texto",
             "descricao": "texto",
             "opcoes": { 
@@ -136,7 +137,7 @@ def carregar_cenarios():
         },
         "DESISTO": { 
             "titulo": "FRACOTE",
-            "descricao": "Pobre {0}!" .format(nome),
+            "descricao": "Pobre jogador!" .format(nome),
             "opcoes": { 
             } 
         }
@@ -215,6 +216,7 @@ def main():
             print()
             print(RED + "E então, o que vai fazer?!?" + RESET)
             escolha = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
+            print()
             
             #O jogo continua para o gamer;
             if escolha in opcoes:
