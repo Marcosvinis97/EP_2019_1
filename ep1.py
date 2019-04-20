@@ -171,9 +171,8 @@ def carrega_criaturas():
                            "OPCAO" : "TEXTO"
                            }
                    }
-                }
-    nome_personagem = "TECNICO"        
-    return personagens, nome_personagem
+                }       
+    return personagens
 # FIM FUNÇÃO MONSTROS 
 
 def main():
@@ -204,51 +203,91 @@ def main():
     
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
-    personagens, nome_personagem = carrega_criaturas()
+    personagens = carrega_criaturas()
     game_over = False
-    
-    while not game_over:
-        cenario_atual = cenarios[nome_cenario_atual]
-        #personagem = personagens[nome_personagem]
-        # Título do cenário atual;
-        titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
-        print(BLUE + titulo_cenario + RESET)
-        print(BLUE + "-"*len(titulo_cenario) + RESET)
+    variavel = nome_cenario_atual    
+    #Looping
+    while not game_over: 
         
-        # Descrição do cenário atual;
-        print(RED + cenarios[nome_cenario_atual]["descricao"] + RESET)
+        escolha = variavel
         
-        # Opções do gamer no cenário atual;
-        opcoes = cenario_atual['opcoes']
-        if len(opcoes) == 0: # O jogo termina para o gamer;
-            print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
-            print()
-            game_over = True
-            
-        else:
-            print()
-            print(RED + "Escolha sua opção:" + RESET)
-
-            for escolha in opcoes:
-                print(RED + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
-                
-            print()
-            print(RED + "E então, o que vai fazer?!?" + RESET)
-            escolha = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
-            print()
-            
-            #O jogo continua para o gamer;
-            if escolha in opcoes:
-                nome_cenario_atual = escolha
-                
-            #O jogo termina para o gamer;  
-            else:
-                print()
-                print(RED + "Sua indecisão foi sua ruína!" + RESET)
+        while escolha in personagens:
+            titulo_personagem = personagens[escolha]["titulo"] 
+            print(BLUE + titulo_personagem + RESET)
+            print(BLUE + "-"*len(titulo_personagem) + RESET)
+            print(RED + personagens[escolha]["descricao"] + RESET)
+            opcoes = personagens[escolha]['opcoes']
+            if len(opcoes) == 0: # O jogo termina para o gamer;
+                print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
                 print()
                 game_over = True
+            
+            else:
+                print()
+                print(RED + "Escolha sua opção:" + RESET)
 
-    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
+                for alternativa in opcoes:
+                    print(RED + '{0}: {1}'.format(alternativa,opcoes[alternativa]) + RESET)
+                
+                print()
+                print(RED + "E então, o que vai fazer?!?" + RESET)
+                resposta = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
+                print()
+            
+                #O jogo continua para o gamer;
+                if resposta in opcoes:
+                    escolha = resposta
+                #O jogo termina para o gamer;  
+                else:
+                    print()
+                    print(RED + "Sua indecisão foi sua ruína!" + RESET)
+                    print()
+                    game_over = True
+
+                    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
+
+            
+        while escolha in cenarios:
+            cenario_atual = cenarios[escolha]
+            #personagem = personagens[nome_personagem]
+            # Título do cenário atual;
+            titulo_cenario = cenarios[escolha]["titulo"] 
+            print(BLUE + titulo_cenario + RESET)
+            print(BLUE + "-"*len(titulo_cenario) + RESET)
+        
+            # Descrição do cenário atual;
+            print(RED + cenarios[escolha]["descricao"] + RESET)
+        
+            # Opções do gamer no cenário atual;
+            opcoes = cenario_atual['opcoes']
+            if len(opcoes) == 0: # O jogo termina para o gamer;
+                print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
+                print()
+                game_over = True
+            
+            else:
+                print()
+                print(RED + "Escolha sua opção:" + RESET)
+
+                for alternativa in opcoes:
+                    print(RED + '{0}: {1}'.format(alternativa, opcoes[alternativa]) + RESET)
+                
+                print()
+                print(RED + "E então, o que vai fazer?!?" + RESET)
+                resposta = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
+                print()
+            
+                #O jogo continua para o gamer;
+                if resposta in opcoes:
+                    escolha = resposta
+                #O jogo termina para o gamer;  
+                else:
+                    print()
+                    print(RED + "Sua indecisão foi sua ruína!" + RESET)
+                    print()
+                    game_over = True
+
+                    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
 
 # Programa principal.
 if __name__ == "__main__":
