@@ -1,20 +1,21 @@
-﻿# -- coding: utf-8 --
-# EP 2019-1: Escape Insper
-#
+﻿# EP 2019-1: Escape Insper
+# Disciplina: Design de Software 
+# Professor: Fábio José Ayres
+# Turma: 1B
 # Alunos: 
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
-# - aluno B: Marcos Vinínius da Silva, marcosvs3@al.insper.edu.br
+# - aluno B: Marcos Vinícius da Silva, marcosvs3@al.insper.edu.br
 
 #início da INTRODUÇÃO
 RED   = "\033[1;31m" 
 RESET = "\033[0;0m"
 
-print(RED + "Olá, Gamer!\nQual é o seu nome?" + RESET)
-nome = input()
+print(RED + "Olá, Gamer!\nQual é o seu nome?" + RESET) 
+nome = input() #Indentificando o jogador;
 print()
 
 print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\nAproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem te levar para muuuito longe!" .format(nome)  + RESET)
-enter = input(RED + "Aperte a tecla enter para continuar." + RESET)
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
 print()
 #Fim da INTRODUÇÃO
 
@@ -130,6 +131,7 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
+
 
     
 
