@@ -5,13 +5,18 @@
 # - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
 # - aluno B: Marcos Vinínius da Silva, marcosvs3@al.insper.edu.br
 
-#introdução
-nome = input("Olá! Qual o seu nome? " )
+#início da INTRODUÇÃO
+RED   = "\033[1;31m" 
+RESET = "\033[0;0m"
+
+print(RED + "Olá, Gamer!\nQual é o seu nome?" + RESET)
+nome = input()
 print()
-print("Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\nAproveite o jogo e ... cuidado com suas escolhas, "
-      "pois elas podem te levar para muuuito longe!".format(nome))
-enter = input("Aperte enter para continuar")
+
+print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\nAproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem te levar para muuuito longe!" .format(nome)  + RESET)
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET)
 print()
+#Fim da INTRODUÇÃO
 
 def carregar_cenarios():
     cenarios = {
@@ -113,6 +118,9 @@ def main():
             
             if escolha in opcoes:
                 nome_cenario_atual = escolha
+                
+                
+                
             else:
                 print("Sua indecisão foi sua ruína!")
                 game_over = True
@@ -122,5 +130,6 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
+
     
 
