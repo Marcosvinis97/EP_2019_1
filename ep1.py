@@ -59,8 +59,7 @@ def carregar_cenarios():
             "opcoes": { 
                 "CONHECER O NOVO MUNDO" : "Atenção! Podem existir criaturas "
                 " estranhas à solta",
-                "OPÇÃO" : "texto",
-                "DESISTO" : ""
+                "DESISTO" : "É muita pressão! Prefiro a DP"
             } 
         },
         "CAMINHANDO": {
@@ -71,13 +70,14 @@ def carregar_cenarios():
                 "DESISTIR": "texto"
             }
         },
-        "UNIVERSO PARALELO": {
-            "titulo": "texto",
-            "descricao": "texto",
+        "CONHECER O NOVO MUNDO": {
+            "titulo": "UNIVERSO PARALELO",
+            "descricao": "Atenção: você foi levado para um lugar muito parecido "
+            "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
+            " por monstros!",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "PEGAR O ELEVADOR" : "Ande devagar, pois o local está escuro.",
+                "RECEPCIONISTA" : "Ele parece ser uma boa criatura. Pegue informações com ele.",
             } 
         },
         "ABRIGO": {
@@ -155,16 +155,24 @@ def carregar_cenarios():
 # FIM FUNÇÃO CERNÁRIOS
 
 # INÍCIO FUNÇAO MONSTROS
-def carrega_monstros():
+def carrega_criaturas():
     personagens = {
-            "tecnico do FabAlien": { # jogador dentro do FabAlien
-                    "opçoes de luta": {
+            "TECNICO": { # jogador dentro do FabAlien
+                    "opçoes de ação": {
                             "chute" : "Não é a melhor opção, mas é de fácil execução!",
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"
+                    }
+                         }, 
+           "RECEPCIONISTA" : {
+                   "opçoes de ação" : {
+                           "OPCAO" : "TEXTO",
+                           "OPCAO" : "TEXTO"
+                           }
+                   }
                 }
-            
-    return personagens
+    nome_personagem = "TECNICO"        
+    return personagens, nome_personagem
 # FIM FUNÇÃO MONSTROS 
 
 def main():
@@ -192,13 +200,15 @@ def main():
 
     enter2 = input(RED + "Aperte a tecla enter para continuar." + RESET) # Continuando o Jogo;
     print()
+    
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
-
+    personagens, nome_personagem = carrega_criaturas()
     game_over = False
+    
     while not game_over:
         cenario_atual = cenarios[nome_cenario_atual]
-        
+        #personagem = personagens[nome_personagem]
         # Título do cenário atual;
         titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
         print(BLUE + titulo_cenario + RESET)
