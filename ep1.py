@@ -6,25 +6,25 @@
 # - Thalia Loiola Silva, thalials@al.insper.edu.br
 # - Marcos Vinícius da Silva, marcosvs3@al.insper.edu.br
 
-#INÍCIO DA INTRODUÇÃO
+# INÍCIO DA INTRODUÇÃO
 RED   = "\033[1;31m" 
 RESET = "\033[0;0m"
 
 print(RED + "Olá, Gamer!" + RESET)
 print(RED + "Qual é o seu nome?" + RESET)
-nome = input() #Indentificando o gamer;
+nome = input() # Indentificando o gamer;
 print()
 
 print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá preparado(a) para uma grande aventura?!")
 print()
 print(RED + "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
-      "te levar para muuuito longe!" + RESET) #Boas-vindas ao gamer;
+      "te levar para muuuito longe!" + RESET) # Boas-vindas ao gamer;
 
-enter = input(RED + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET) # Iniciando o Jogo;
 print()
-#FIM DA INTRODUÇÃO
+# FIM DA INTRODUÇÃO
 
-#INÍCIO FUNÇÃO CENÁRIOS
+# INÍCIO FUNÇÃO CENÁRIOS
 def carregar_cenarios():
     cenarios = {
         "INICIO": {
@@ -50,61 +50,88 @@ def carregar_cenarios():
             "titulo": "A FENDA",
             "descricao": "Você pedalou rão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo.",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
         "CAMINHANDO": {
-            "titulo": "MOTORISTA TRANQUILO",
-            "descricao": "Você pediu um uber, mas o motorista tem medo de ser multado por limite de velocidade...",
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": {
-                "inicio": "Fugir do carro no primeiro sinal vermelho e voltar correndo para casa!"
+                "BIKE": "texto",
+                "DESISTIR": "texto
             }
         },
-        "4": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
-            "titulo": "A fenda",
-            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+        "UNIVERSO PARALELO": {
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "5": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
-            "titulo": "A fenda",
-            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+        "ABRIGO": {
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "6": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
-            "titulo": "A fenda",
-            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+        "INSPER": { 
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "7": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
-            "titulo": "A fenda",
-            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+        "BIBLIOTECA": { 
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "8": { #nesse momento, abrirá uma fenda que levara o jogador para outro mundo 
-            "titulo": "A fenda",
-            "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
+        "ELEVADOR": {
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
-                "opcao2" : "comentario2",
-                "opcao3" : "..."
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
+            }
+        "SUBSOLO": { 
+            "titulo": "texto",
+            "descricao": "texto",
+            "opcoes": { 
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
+            } 
+        },
+        "REFEITORIO": { 
+            "titulo": "texto",
+            "descricao": "texto",
+            "opcoes": { 
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
+            } 
+        },
+        "SALA DO PROFESSOR": {
+            "titulo": "texto",
+            "descricao": "texto",
+            "opcoes": { 
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
         "DESISTO": { 
@@ -116,11 +143,12 @@ def carregar_cenarios():
     }
     nome_cenario_atual = "INICIO"
     return cenarios, nome_cenario_atual
-#FIM FUNÇÃO CERNÁRIOS
+# FIM FUNÇÃO CERNÁRIOS
 
+# INÍCIO FUNÇAO MONSTROS
 def carrega_monstros():
     personagens = {
-            "tecnico do FabAlien": { #jogador dentro do FabAlien
+            "tecnico do FabAlien": { # jogador dentro do FabAlien
                     "opçoes de luta": {
                             "chute" : "Não é a melhor opção, mas é de fácil execução!",
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
@@ -128,7 +156,7 @@ def carrega_monstros():
                 }
             
     return personagens
-
+# FIM FUNÇÃO MONSTROS 
 
 def main():
     BLUE  = "\033[1;34m"
@@ -153,7 +181,7 @@ def main():
     print(RED + "Boa sorte," + RESET, " {0}." .format(nome), RED + " Pois os desafios estão apenas começando..." + RESET)
     print()
 
-    enter2 = input(RED + "Aperte a tecla enter para continuar." + RESET) #Continuando o Jogo;
+    enter2 = input(RED + "Aperte a tecla enter para continuar." + RESET) # Continuando o Jogo;
     print()
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
