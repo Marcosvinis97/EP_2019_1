@@ -3,26 +3,24 @@
 # Professor: Fábio José Ayres
 # Turma: 1B
 # Alunos: 
-# - aluno A: Thalia Loiola Silva, thalials@al.insper.edu.br
-# - aluno B: Marcos Vinícius da Silva, marcosvs3@al.insper.edu.br
+# - Thalia Loiola Silva, thalials@al.insper.edu.br
+# - Marcos Vinícius da Silva, marcosvs3@al.insper.edu.br
 
 #INÍCIO DA INTRODUÇÃO
 RED   = "\033[1;31m" 
 RESET = "\033[0;0m"
+GREEN = "\033[0;32m"
 
-print(RED + "Olá, GAMER!\nQual é o seu nome?" + RESET) 
-
-#Indentificando o gamer;
-nome = input()
+print(RED + "Olá Gamer!" + RESET)
+print(GREEN + "Qual é o seu nome?" + RESET)
+nome = input() #Indentificando o gamer;
 print()
 
-#Boas vindas ao gamer;
 print(RED + "Bem-vindo(a), {0}! Está preparado(a) para uma grande aventura?!\n"
       "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
-      "te levar para muuuito longe!" .format(nome)  + RESET)
+      "te levar para muuuito longe!" .format(nome)  + RESET) #Boas vindas ao gamer;
 
-#Iniciando o Jogo;
-enter = input(RED + "Aperte a tecla enter para continuar." + RESET)
+enter = input(GREEN + "Aperte a tecla enter para continuar." + RESET) #Iniciando o Jogo;
 print()
 #FIM DA INTRODUÇÃO
 
@@ -79,9 +77,10 @@ def carrega_monstros():
 def main():
     BLUE  = "\033[1;34m"
     RED   = "\033[1;31m" 
+    GREEN = "\033[0;32m"
     RESET = "\033[0;0m"
     
-    #Contextualizando o início do jogopara o gamer;        
+    # Contextualizando o início do jogo para o gamer;        
     print(BLUE + "Na hora do sufoco!" + RESET)
     print(BLUE + "------------------" + RESET)
     print()
@@ -99,45 +98,47 @@ def main():
     print(BLUE + "Boa sorte! Pois os desafios estão apenas começando..." + RESET)
     print()
     
-    #Retornando aos Dicionários - Início;
+    # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
 
     game_over = False
     while not game_over:
-        #Apresentando cenarios
         cenario_atual = cenarios[nome_cenario_atual]
         
-        #Título do cenário atual;
+        # Título do cenário atual;
         titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
-        print(titulo_cenario)
-        print("-"*len(titulo_cenario))
+        print(BLUE + titulo_cenario + RESET)
+        print(BLUE + "-"*len(titulo_cenario) + RESET)
         
-        #descrição do cenário
-        print(cenarios[nome_cenario_atual]["descricao"])
+        # Descrição do cenário atual;
+        print(RED + cenarios[nome_cenario_atual]["descricao"] + RESET)
         
-        #Apresentação das escolhas que o jogador pode fazer dentro do cenario 
-        #que ele estiver:
+        # Opções do gamer no cenário atual;
         opcoes = cenario_atual['opcoes']
-        if len(opcoes) == 0:
-            print("Acabaram-se suas opções! Mwo mwo mwooooo...")
-            game_over = True
-        else:
-            #Parte do Marcos (aluno B):
-            print("Escolha sua opção:")
+        if len(opcoes) == 0: # O jogo termina para o gamer;
+            print(RED + "Acabaram-se suas opções! Mwo mwo mwooooo..." + RESET)
             print()
-            for escolha in opcoes:
-                print('{0}: {1}'.format(escolha, opcoes[escolha]))
-            #professor fez
-            escolha = input("O que você vai fazer? ")
+            game_over = True
+            
+        else:
+            print(RED + "Escolha sua opção:" + RESET)
             print()
             
+            for escolha in opcoes:
+                print(RED + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
+                
+            print()    
+            print(RED + "E então, o que vai fazer?!?" + RESET)
+            escolha = input(RED + "Digite o número da sua escolha:\n" + RESET)
+            
+            #O jogo continua para o gamer;
             if escolha in opcoes:
                 nome_cenario_atual = escolha
                 
-                
-            #Termina o jogo para o gamer;   
+            #O jogo termina para o gamer;  
             else:
                 print(RED + "Sua indecisão foi sua ruína!" + RESET)
+                print()
                 game_over = True
 
     print(RED + "Você morreu!" + RESET)
@@ -145,6 +146,7 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
+
 
 
     
