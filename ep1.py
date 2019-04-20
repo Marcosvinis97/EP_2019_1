@@ -35,8 +35,9 @@ def carregar_cenarios():
             "titulo": "A fenda",
             "descricao": "Você estava tão rápido que abriu uma fenda no espaço-tempo, te levando para outro mundo!",
             "opcoes": { 
-                "opcao1" : "comentario1",
-                "opcao2" : "comentario2"
+                "conhecer o novo mundo" : "Atenção! Podem existir criaturas estranhas à solta!",
+                "opcao2" : "comentario2",
+                "opcao3" : "..."
                     } #aí só Jesus na causa
         },
         "pedir um uber": {
@@ -47,10 +48,19 @@ def carregar_cenarios():
             }
         }
     }
-            
-            
     nome_cenario_atual = "inicio"
     return cenarios, nome_cenario_atual
+
+def carrega_monstros():
+    personagens = {
+            "tecnico do FabAlien": { #jogador dentro do FabAlien
+                    "opçoes de combate": {
+                            "chute" : "Não é a melhor opção, mas é de fácil execução!",
+                            "rasgar seu jaleco": "Você deixará ele sempre proteção!",
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
+                }
+            
+    return personagens
 
 
 def main():
@@ -71,7 +81,6 @@ def main():
     print()
     #Retornando os dicionários
     cenarios, nome_cenario_atual = carregar_cenarios()
-
     game_over = False
     #enquanto não for fim de jogo:
     while not game_over:
@@ -93,7 +102,7 @@ def main():
             print("Acabaram-se suas opções! Mwo mwo mwooooo...")
             game_over = True
         else:
-            #Parte do Marcos (aluno B): essa parte foi copiada do Cícero! 
+            #Parte do Marcos (aluno B):
             print("Escolha sua opção:")
             print()
             for escolha in opcoes:
@@ -113,3 +122,4 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
+
