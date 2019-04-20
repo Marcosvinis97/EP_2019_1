@@ -77,25 +77,25 @@ def carregar_cenarios():
             " por monstros!",
             "opcoes": { 
                 "PEGAR O ELEVADOR" : "Ande devagar, pois o local está escuro.",
-                "RECEPCIONISTA" : "Ele parece ser uma boa criatura. Pegue informações com ele.",
+                "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele.",
             } 
         },
-        "ABRIGO": {
-            "titulo": "texto",
-            "descricao": "texto",
+        "PEGAR O ELEVADOR": {
+            "titulo": "ELEVADOR DA MORTE",
+            "descricao": "Você está dentro do elevador, mas ele só consegue te"
+            " levar para o 3° andar, onde fica o FabAlien. Caso aperte outro botão,"
+            "o elevador despenca e vc perder o jogo. Mas, para isso, é necessário "
+            "acertar a charada: qual o nome correto do professor de desoft? ",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "FABYO AIRES" : "",
+                "FABIO AYRES" : "",
+                "DESISTO" : "Muito complexo"
             } 
         },
-        "INSPER": { 
-            "titulo": "texto",
-            "descricao": "texto",
+        "FABYO AIRES": { 
+            "titulo": "VOCÊ MORREU!",
+            "descricao": "Não foi dessa vez!",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
             } 
         },
         "BIBLIOTECA": { 
