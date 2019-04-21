@@ -48,11 +48,10 @@ def carregar_cenarios():
         },
         "BIKE": { 
             "titulo": "A FENDA",
-            "descricao": "Você pedalou rão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo.",
+            "descricao": "Você pedalou tão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo!! Louco, não?!?",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Vou tentar encontrar uma maneira de sair daqui e entregar meu EP!!",
+                "DESISTO" : "Desisto o EP está perdido... Não tenho o que fazer, apenas esperar por socorro!"
             } 
         },
         "CAMINHANDO": {
@@ -155,6 +154,12 @@ def carrega_monstros():
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
                             "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
                 }
+            "Mestre Ayres": { # jogador dentro do FabAlien#poderes telepaticos
+                    "opçoes de luta": {
+                            "chute" : "Não é a melhor opção, mas é de fácil execução!",
+                            "rasgar seu jaleco": "Você deixará ele sempre proteção!",
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
+                }
             
     return personagens
 # FIM FUNÇÃO MONSTROS 
@@ -165,7 +170,7 @@ def main():
     RESET = "\033[0;0m"
     
     # Contextualizando o início do jogo para o gamer;        
-    print(BLUE + "Na hora do sufoco!" + RESET)
+    print(BLUE + "NA HORA DO SUFOCO" + RESET)
     print(BLUE + "------------------" + RESET)
     print()
     print(RED + "Parecia uma ideia boa: Vou só assistir um novo episódio de "
