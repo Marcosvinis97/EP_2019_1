@@ -66,13 +66,14 @@ def carregar_cenarios():
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
-        "CONHECER NOVO MUNDO": {
+        "CONHECER O NOVO MUNDO": {
             "titulo": "UNIVERSO PARALELO",
-            "descricao": "texto",
+            "descricao": "Atenção: você foi levado para um lugar muito parecido "
+            "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
+            " por monstros!",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "PEGAR ELEVADOR" : "Ande devagar, pois o local está escuro.",
+                "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele."
             } 
         },
         "ABRIGO": {
