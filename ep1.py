@@ -31,10 +31,10 @@ def carregar_cenarios():
             "titulo": "É HORA DE DAR NO PÉ",
             "descricao": "Você esta no portão de casa e deve decidir qual é a melhor opção para chegar até o Insper.",
             "opcoes": {
-                "UBER": "texto", #PODE SER A MAIS RÁPIDA/MAIS LENTA(TRANSITO)/MAIS SEGURA(CARRO BLINDADO)
-                "BIKE": "texto", #MAIS RAPIDA(DESVIA DO TRANSITO)/ALUNO FEDIDO E CANSADO(PROFESSOR NÃO ATENDE ALUNOS FEDIDOS)
-                "CAMINHANDO": "texto", #MAIS PERIGOSA/ALUNO NÃO CHEGA FEDIDO   
-                "DESISTO": "texto" #DESANIMO
+                "UBER": "Pode ser a opção mais rápida ou não, pois a cidade está um caos neste dia de entrega... Vai arriscar?",
+                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de ataques a corredores ao redor do Insper...Vai arriscar?",   
+                "DESISTO": "Pegar DP não deve ser tão ruim assim..." 
             }
         },
         "UBER": {
