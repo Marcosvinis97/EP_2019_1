@@ -56,14 +56,18 @@ def carregar_cenarios():
         },
         "CORRENDO": {
             "titulo": "QUEM AVISA AMIGO É",
-            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, deseja continuar?? Depois não vai dizer que não aviser! rsrs",
+            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos"
+            " desaparecendo ao redor do Insper, deseja continuar?? Depois"
+            " não vai dizer que não avisei! rsrs",
             "opcoes": {
-                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "BIKE": "Você chegará a tempo no Insper, entretanto,"
+                " provavelmente estará fedendo e o Mestre Ayres não gosta de "
+                "alunos fedidos... ",
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
-        "UNIVERSO PARALELO": {
-            "titulo": "texto",
+        "CONHECER NOVO MUNDO": {
+            "titulo": "UNIVERSO PARALELO",
             "descricao": "texto",
             "opcoes": { 
                 "OPÇÃO" : "texto",
