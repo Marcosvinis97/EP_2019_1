@@ -56,12 +56,21 @@ def carregar_cenarios():
         },
         "CORRENDO": {
             "titulo": "QUEM AVISA AMIGO É",
+<<<<<<< HEAD
             "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, sem explicação, deseja continuar?? Depois não vai dizer que não avisei! rsrs",
+=======
+            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos"
+            " desaparecendo ao redor do Insper, deseja continuar?? Depois"
+            " não vai dizer que não avisei! rsrs",
+>>>>>>> 96644c1017b8c71bf020bef62b2a986bef849cfb
             "opcoes": {
-                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "BIKE": "Você chegará a tempo no Insper, entretanto,"
+                " provavelmente estará fedendo e o Mestre Ayres não gosta de "
+                "alunos fedidos... ",
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
+<<<<<<< HEAD
         "CONHECER NOVO MUNDO": {
             "titulo": "UNIVERSO PARALELO",
             "descricao": "Atenção: Você foi levado para um lugar muito parecido com o prédio novo do Insper!! Mas não se iluda, você não está no seu mundo!",
@@ -69,6 +78,16 @@ def carregar_cenarios():
                 "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez ele esteja aqui mesmo... Que tal subir até o andar dele para conferir...",
                 "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela ajudaria com informações? rsrs Cuidado!",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
+=======
+        "CONHECER O NOVO MUNDO": {
+            "titulo": "UNIVERSO PARALELO",
+            "descricao": "Atenção: você foi levado para um lugar muito parecido "
+            "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
+            " por monstros!",
+            "opcoes": { 
+                "PEGAR ELEVADOR" : "Ande devagar, pois o local está escuro.",
+                "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele."
+>>>>>>> 96644c1017b8c71bf020bef62b2a986bef849cfb
             } 
         },
         "ABRIGO": {
