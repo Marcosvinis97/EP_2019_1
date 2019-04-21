@@ -81,21 +81,18 @@ def carregar_cenarios():
             } 
         },       
         "RECEPCIONISTA": { 
-            "titulo": "texto",
-            "descricao": "texto",
+            "titulo": "OPS, NÃO FOI UMA BOA IDEIA",
+            "descricao": "----ele morre aqui(falta história)--------",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
-            } 
+           } 
         },
-        "BIBLIOTECA": { 
-            "titulo": "texto",
-            "descricao": "texto",
+        "FÁBIO AYRES": { 
+            "titulo": "PARABÉNS",
+            "descricao": "Você sabe o nome do seu professor. É um bom começo.",
             "opcoes": { 
                 "OPÇÃO" : "texto",
                 "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
         "GARAGEM": { 
