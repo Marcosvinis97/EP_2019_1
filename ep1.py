@@ -73,7 +73,7 @@ def carregar_cenarios():
         },
         "ELEVADOR": {
             "titulo": "TUDO OU NADA",
-            "descricao": "Você não devia ter feito isto... Neste momento você está dentro do elevador, mas ele só consegue te levar para o 3º andar, onde ficca o FabAlien. Entretanto, para a porta do elevador abrir é necessário acertar a pergunta: Como se escreve corretamente o nome do professor de DESOFT? Vale resaltar que caso você erre a pergunta o elevador despenca... rsrs",
+            "descricao": "Você não devia ter feito isto... Neste momento você está dentro do elevador, mas ele só consegue te levar para o 3º andar, onde fica o FabAlien. Entretanto, para a porta do elevador abrir é necessário acertar a pergunta: Como se escreve corretamente o nome do professor de DESOFT? Vale resaltar que caso você erre a pergunta o elevador despenca... rsrs",
             "opcoes": { 
                 "FABIO AYRES" : "Será?",
                 "FÁBIO AIRES" : "Será?",
@@ -82,7 +82,7 @@ def carregar_cenarios():
         },       
         "RECEPCIONISTA": { 
             "titulo": "OPS, NÃO FOI UMA BOA IDEIA",
-            "descricao": "----ele morre aqui(falta história)--------",
+            "descricao": "----ele morre aqui(falta história/)--------PERSONAGEM",
             "opcoes": { 
            } 
         },
@@ -90,35 +90,16 @@ def carregar_cenarios():
             "titulo": "PARABÉNS",
             "descricao": "Você sabe o nome do seu professor. É um bom começo.",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
+                "SALA DO PROFESSOR" : "A sala do Mestre Ayres é logo ali... Que tal ver se ele está ali e finalmente entregar sua EP!! ",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
-            } 
-        },
-        "GARAGEM": { 
-            "titulo": "texto",
-            "descricao": "texto",
-            "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
-            } 
-        },
-        "REFEITORIO": { 
-            "titulo": "texto",
-            "descricao": "texto",
-            "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
             } 
         },
         "SALA DO PROFESSOR": {
             "titulo": "texto",
             "descricao": "texto",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
+                "OPÇÃO" : "PERSONAGEM 1",
+                "OPÇÃO" : "PERSONAGEM 2",
                 "DESISTIR" : "texto"
             } 
         },
