@@ -108,6 +108,12 @@ def carregar_cenarios():
             "opcoes": { 
             } 
         },
+        "FINAL": { 
+            "titulo": "TEXTO FINAL",
+            "descricao": "TEXTO TRÁGICO DE MORTE",
+            "opcoes": { 
+            } 
+        },
         "FABIO AYRES": { 
             "titulo": "ERROUU",
             "descricao": "Pobre jogador! É Fábio Ayres.",
