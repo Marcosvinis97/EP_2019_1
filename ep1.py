@@ -15,12 +15,14 @@ print(RED + "Qual é o seu nome?" + RESET)
 nome = input() # Indentificando o gamer;
 print()
 
-print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá preparado(a) para uma grande aventura?!")
+print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá "
+      "preparado(a) para uma grande aventura?!")
 print()
-print(RED + "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
+print(RED + "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas "
+      "podem "
       "te levar para muuuito longe!" + RESET) # Boas-vindas ao gamer;
-
-enter = input(RED + "Aperte a tecla enter para continuar." + RESET) # Iniciando o Jogo;
+# Iniciando o Jogo
+enter = input(RED + "Aperte a tecla enter para continuar." + RESET) 
 print()
 # FIM DA INTRODUÇÃO
 
@@ -29,77 +31,114 @@ def carregar_cenarios():
     cenarios = {
         "INICIO": {
             "titulo": "É HORA DE DAR NO PÉ",
-            "descricao": "Você esta no portão de casa e deve decidir qual é a melhor opção para chegar até o Insper.",
+            "descricao": "Você esta no portão de casa e deve decidir qual é a "
+            "melhor opção para chegar até o Insper.",
             "opcoes": {
-                "UBER": "Pode ser a opção mais rápida ou não, pois a cidade está um caos neste dia de entrega... Vai arriscar?",
-                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
-                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de ataques a corredores ao redor do Insper...Vai arriscar?",   
+                "UBER": "Pode ser a opção mais rápida ou não, pois a cidade "
+                "está um caos neste dia de entrega... Vai arriscar?",
+                "BIKE": "Você chegará a tempo no Insper, entretanto, "
+                "provavelmente estará fedendo e o Mestre Ayres não gosta de "
+                "alunos fedidos... ",
+                "CORRENDO": "Correndo você podera desviar do transito, "
+                "entretanto, há boatos de ataques a corredores ao redor "
+                "do Insper...Vai arriscar?",   
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..." 
             }
         },
         "UBER": {
             "titulo": "É HORA DO RUSH",
-            "descricao": "A cidade está um caos por conta das entregas dos EP's e o motorista do Uber escolheu o pior caminho possível. Se continuar assim, você chegara no Insper após o horário limite da entrega.",
+            "descricao": "A cidade está um caos por conta das entregas dos "
+            "EP's e o motorista do Uber escolheu o pior caminho possível. "
+            "Se continuar assim, você chegara no Insper após o horário "
+            "limite da entrega.",
             "opcoes": {
-                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
-                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de que Alunos Corredores estão desaparecendo ao redor do Insper...Vai arriscar?", 
+                "BIKE": "Você chegará a tempo no Insper, entretanto, "
+                "provavelmente estará fedendo e o Mestre Ayres não gosta de "
+                "alunos fedidos... ",
+                "CORRENDO": "Correndo você podera desviar do transito, "
+                "entretanto, há boatos de que Alunos Corredores estão "
+                "desaparecendo ao redor do Insper...Vai arriscar?", 
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
         "BIKE": { 
             "titulo": "A FENDA",
-            "descricao": "Você pedalou tão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo!! Louco, não?!?",
+            "descricao": "Você pedalou tão rápido que acabou abrindo uma fenda "
+            "no espaço-tempo, te levando para outro mundo!! Louco, não?!?",
             "opcoes": { 
-                "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Tente encontrar uma maneira de entregar seu EP!! Ou tente sair o mais rápido possível!!",
-                "DESISTO" : "Pesgar DP não deve ser tão ruim assim... Espere por socorro!"
+                "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Tente encontrar "
+                "uma maneira de entregar seu EP!! Ou tente sair o mais rápido "
+                "possível!!",
+                "DESISTO" : "Pesgar DP não deve ser tão ruim assim... Espere "
+                "por socorro!"
             } 
         },
         "CORRENDO": {
             "titulo": "QUEM AVISA AMIGO É",
-            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, sem explicação, deseja continuar?? Depois não vai dizer que não avisei! rsrs",
+            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos"
+            " desaparecendo ao redor do Insper, sem explicação, "
+            "deseja continuar?? Depois não vai dizer que não foi avisado!",
             "opcoes": {
-                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "BIKE": "Você chegará a tempo no Insper, entretanto, "
+                "provavelmente estará fedendo e o Mestre Ayres não gosta "
+                "de alunos fedidos... ",
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
         "CONHECER NOVO MUNDO": {
             "titulo": "UNIVERSO PARALELO",
-            "descricao": "Atenção: Você foi levado para um lugar muito parecido com o prédio novo do Insper!! Mas não se iluda, você não está no seu mundo!",
+            "descricao": "Atenção: Você foi levado para um lugar muito parecido"
+            " com o prédio novo do Insper!! Mas não se iluda, você não está no "
+            "seu mundo!",
             "opcoes": { 
-                "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez ele esteja aqui mesmo... Que tal subir até o andar dele para conferir...",
-                "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela ajudaria com informações? rsrs Cuidado!",
-                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
+                "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez"
+                " ele esteja aqui mesmo... Que tal subir até o andar dele para "
+                "conferir...",
+                "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela "
+                "ajudaria com informações? rsrs Cuidado!",
+                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que "
+                "tal ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
         "ELEVADOR": {
             "titulo": "TUDO OU NADA",
-            "descricao": "Você não devia ter feito isto... Neste momento você está dentro do elevador, mas ele só consegue te levar para o 3º andar, onde fica o FabAlien. Entretanto, para a porta do elevador abrir é necessário acertar a pergunta: Como se escreve corretamente o nome do professor de DESOFT? Vale resaltar que caso você erre a pergunta o elevador despenca... rsrs",
+            "descricao": "Você não devia ter feito isto... Neste momento você "
+            "está dentro do elevador, mas ele só consegue te levar para o 3º "
+            "andar, onde fica o FabAlien. Entretanto, para a porta do elevador "
+            "abrir é necessário acertar a pergunta: Como se escreve "
+            "corretamente o nome do professor de DESOFT? Vale resaltar que caso"
+            " você erre a pergunta o elevador despenca...",
             "opcoes": { 
                 "FABIO AYRES" : "Será?",
                 "FÁBIO AIRES" : "Será?",
                 "FÁBIO AYRES" : "Será?"
             } 
-        },       
-        "RECEPCIONISTA": { 
-            "titulo": "OPS, NÃO FOI UMA BOA IDEIA",
-            "descricao": "----ele morre aqui(falta história/)--------PERSONAGEM",
-            "opcoes": { 
-           } 
         },
         "FÁBIO AYRES": { 
             "titulo": "PARABÉNS",
-            "descricao": "Você sabe o nome do seu professor. É um bom começo. Escolha um lugar para ir.",
+            "descricao": "Você sabe o nome do seu professor. É um bom começo. "
+            "Escolha um lugar para ir.",
             "opcoes": { 
-                "SALA DO PROFESSOR" : "A sala do Mestre Ayres é logo ali... Que tal ver se ele está ali e finalmente entregar sua EP!! ",
-                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
+                "SALA DO PROFESSOR" : "A sala do Mestre Ayres é logo ali... "
+                "Que tal ver se ele está ali e finalmente entregar sua EP!! ",
+                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal "
+                "ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
         "SALA DO PROFESSOR": {
             "titulo": "AS APARÊNCIAS ENGANAM",
-            "descricao": "Você está na sala do Mestre Ayres e ele está distraído mexendo no seu notebook. ",
+            "descricao": "Você está na sala do Mestre Ayres e ele está "
+            "distraído mexendo no seu notebook. ",
             "opcoes": { 
                 "ENTREGAR EP" : "Pode ser que sua nota seja garantida!",
                 "ELEVADOR" : "Volte ao lugar de onde veio.",
+            } 
+        },
+            "ENTREGAR EP": {
+            "titulo": "VOCÊ MORREU!",
+            "descricao": "Infelizmente, esse mestre Ayres é na verdade um"
+            " monstro e fica mais forte a cada EP entregue! ",
+            "opcoes": { 
             } 
         },
         "DESISTO": { 
