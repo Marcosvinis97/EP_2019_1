@@ -42,7 +42,7 @@ def carregar_cenarios():
             "descricao": "A cidade está um caos por conta das entregas dos EP's e o motorista do Uber escolheu o pior caminho possível. Se continuar assim, você chegara no Insper após o horário limite da entrega.",
             "opcoes": {
                 "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
-                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de ataques a corredores ao redor do Insper...Vai arriscar?", 
+                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de que Alunos Corredores estão desaparecendo ao redor do Insper...Vai arriscar?", 
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
@@ -54,12 +54,12 @@ def carregar_cenarios():
                 "DESISTO" : "Desisto o EP está perdido... Não tenho o que fazer, apenas esperar por socorro!"
             } 
         },
-        "CAMINHANDO": {
-            "titulo": "texto",
-            "descricao": "texto",
+        "CORRENDO": {
+            "titulo": "QUEM AVISA AMIGO É",
+            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, deseja continuar?? Depois não vai dizer que não aviser! rsrs",
             "opcoes": {
-                "BIKE": "texto",
-                "DESISTIR": "texto"
+                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
         "UNIVERSO PARALELO": {
@@ -152,15 +152,15 @@ def carrega_monstros():
                     "opçoes de luta": {
                             "chute" : "Não é a melhor opção, mas é de fácil execução!",
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
-                }
-            "Mestre Ayres": { # jogador dentro do FabAlien#poderes telepaticos
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}
+            },
+            "Mestre Ayres": { # jogador dentro do FabAlien/poderes telepaticos
                     "opçoes de luta": {
                             "chute" : "Não é a melhor opção, mas é de fácil execução!",
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
-                }
-            
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}
+            }
+        }
     return personagens
 # FIM FUNÇÃO MONSTROS 
 
