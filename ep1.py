@@ -56,21 +56,12 @@ def carregar_cenarios():
         },
         "CORRENDO": {
             "titulo": "QUEM AVISA AMIGO É",
-<<<<<<< HEAD
             "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, sem explicação, deseja continuar?? Depois não vai dizer que não avisei! rsrs",
-=======
-            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos"
-            " desaparecendo ao redor do Insper, deseja continuar?? Depois"
-            " não vai dizer que não avisei! rsrs",
->>>>>>> 96644c1017b8c71bf020bef62b2a986bef849cfb
             "opcoes": {
-                "BIKE": "Você chegará a tempo no Insper, entretanto,"
-                " provavelmente estará fedendo e o Mestre Ayres não gosta de "
-                "alunos fedidos... ",
+                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
-<<<<<<< HEAD
         "CONHECER NOVO MUNDO": {
             "titulo": "UNIVERSO PARALELO",
             "descricao": "Atenção: Você foi levado para um lugar muito parecido com o prédio novo do Insper!! Mas não se iluda, você não está no seu mundo!",
@@ -78,28 +69,18 @@ def carregar_cenarios():
                 "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez ele esteja aqui mesmo... Que tal subir até o andar dele para conferir...",
                 "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela ajudaria com informações? rsrs Cuidado!",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
-=======
-        "CONHECER O NOVO MUNDO": {
-            "titulo": "UNIVERSO PARALELO",
-            "descricao": "Atenção: você foi levado para um lugar muito parecido "
-            "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
-            " por monstros!",
-            "opcoes": { 
-                "PEGAR ELEVADOR" : "Ande devagar, pois o local está escuro.",
-                "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele."
->>>>>>> 96644c1017b8c71bf020bef62b2a986bef849cfb
             } 
         },
-        "ABRIGO": {
-            "titulo": "texto",
-            "descricao": "texto",
+        "ELEVADOR": {
+            "titulo": "TUDO OU NADA",
+            "descricao": "Você não devia ter feito isto... Neste momento você está dentro do elevador, mas ele só consegue te levar para o 3º andar, onde ficca o FabAlien. Entretanto, para a porta do elevador abrir é necessário acertar a pergunta: Como se escreve corretamente o nome do professor de DESOFT? Vale resaltar que caso você erre a pergunta o elevador despenca... rsrs",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "FABIO AYRES" : "Será?",
+                "FÁBIO AIRES" : "Será?",
+                "FÁBIO AYRES" : "Será?"
             } 
-        },
-        "INSPER": { 
+        },       
+        "RECEPCIONISTA": { 
             "titulo": "texto",
             "descricao": "texto",
             "opcoes": { 
@@ -116,15 +97,6 @@ def carregar_cenarios():
                 "OPÇÃO" : "texto",
                 "DESISTIR" : "texto"
             } 
-        },
-        "ELEVADOR": {
-            "titulo": "texto",
-            "descricao": "texto",
-            "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
-            }
         },
         "GARAGEM": { 
             "titulo": "texto",
@@ -155,10 +127,22 @@ def carregar_cenarios():
         },
         "DESISTO": { 
             "titulo": "FRACOTE",
-            "descricao": "Pobre jogador!" .format(nome),
+            "descricao": "Pobre jogador!",
             "opcoes": { 
             } 
-        }
+        },
+        "FABIO AYRES": { 
+            "titulo": "ERROUU",
+            "descricao": "Pobre jogador! É Fábio Ayres.",
+            "opcoes": { 
+            } 
+        },
+        "FÁBIO AIRES": { 
+            "titulo": "ERROUU",
+            "descricao": "Pobre jogador! É Fábio Ayres.",
+            "opcoes": { 
+            } 
+        }            
     }
     nome_cenario_atual = "INICIO"
     return cenarios, nome_cenario_atual
@@ -199,7 +183,7 @@ def main():
     print(RED + "Ao olhar o grupo do Whatsapp da sala, você notou que haviam muitas"
           " mensagens no grupo e isso poderia significar duas coisas: Perigo ou"
           " zoeira. Infelizmente, não era a segunda opção... Você leu as "
-          "mensagens e lembrou que havia um EP para entregar! E não somente "
+          "mensagens e lembrou que havia um EP para entregar para o seu Mestre, o professor Ayres! E não somente "
           "isso: estava em casa e precisava chegar o quanto antes para entregar"
           " seu trabalho, pois o professor não aceitaria atrasos." + RESET)
     print()
@@ -226,6 +210,7 @@ def main():
         # Opções do gamer no cenário atual;
         opcoes = cenario_atual['opcoes']
         if len(opcoes) == 0: # O jogo termina para o gamer;
+            print()
             print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
             print()
             game_over = True
