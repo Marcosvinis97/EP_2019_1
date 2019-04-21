@@ -1,4 +1,4 @@
-# EP 2019-1: Escape Insper
+﻿# EP 2019-1: Escape Insper
 # Disciplina: Design de Software 
 # Professor: Fábio José Ayres
 # Turma: 1B
@@ -15,8 +15,7 @@ print(RED + "Qual é o seu nome?" + RESET)
 nome = input() # Indentificando o gamer;
 print()
 
-print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá "
-      "preparado(a) para uma grande aventura?!")
+print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá preparado(a) para uma grande aventura?!")
 print()
 print(RED + "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas podem "
       "te levar para muuuito longe!" + RESET) # Boas-vindas ao gamer;
@@ -30,43 +29,30 @@ def carregar_cenarios():
     cenarios = {
         "INICIO": {
             "titulo": "É HORA DE DAR NO PÉ",
-            "descricao": "Você esta no portão de casa e deve decidir qual é"
-            " a melhor opção para chegar até o Insper.",
+            "descricao": "Você esta no portão de casa e deve decidir qual é a melhor opção para chegar até o Insper.",
             "opcoes": {
-<<<<<<< HEAD
                 "UBER": "Pode ser a opção mais rápida ou não, pois a cidade está um caos neste dia de entrega... Vai arriscar?",
                 "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
                 "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de ataques a corredores ao redor do Insper...Vai arriscar?",   
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..." 
-=======
-                "UBER": "Pode ser a opção mais rápida ou não!", #PODE SER A MAIS RÁPIDA/MAIS LENTA(TRANSITO)/MAIS SEGURA(CARRO BLINDADO)
-                "BIKE": "Você chegará a tempo no Insper, mas estará fedendo!", #MAIS RAPIDA(DESVIA DO TRANSITO)/ALUNO FEDIDO E CANSADO(PROFESSOR NÃO ATENDE ALUNOS FEDIDOS)
-                "CAMINHANDO": "Corre!!", #MAIS PERIGOSA/ALUNO NÃO CHEGA FEDIDO   
-                "DESISTO": "Pegar DP não deve ser tão ruim assim..." #DESANIMO
->>>>>>> 043ad4819570b795995c027907efedb4b410538a
             }
         },
         "UBER": {
             "titulo": "É HORA DO RUSH",
-            "descricao": "A cidade está um caos e o motorista do Uber escolheu"
-            " o pior caminho possível. Se continuar assim, você chegara no"
-            " Insper após o seu fechamento.",
+            "descricao": "A cidade está um caos por conta das entregas dos EP's e o motorista do Uber escolheu o pior caminho possível. Se continuar assim, você chegara no Insper após o horário limite da entrega.",
             "opcoes": {
-                "BIKE": "Você chegará mais rápido! No entanto, chegará muito fedido "
-                " e seu professor não gosta de alunos fedidos!", #MAIS RAPIDA(DESVIA DO TRANSITO)/ALUNO FEDIDO E CANSADO(PROFESSOR NÃO ATENDE ALUNOS FEDIDOS)
-                "CAMINHANDO": "Pense bem: pode não dar para chegar a tempo!"
-                " (pelo menos, não chegará fedendo)" , #MAIS PERIGOSA/ALUNO NÃO CHEGA FEDIDO 
-                "DESISTO": "Pegar DP não deve ser tão ruim assim..." #DESANIMO
+                "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
+                "CORRENDO": "Correndo você podera desviar do transito, entretanto, há boatos de ataques a corredores ao redor do Insper...Vai arriscar?", 
+                "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
         "BIKE": { 
             "titulo": "A FENDA",
-            "descricao": "Você pedalou rão rápido que acabou abrindo uma fenda"
-            " no espaço-tempo, te levando para outro mundo.",
+            "descricao": "Você pedalou rão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo.",
             "opcoes": { 
-                "CONHECER O NOVO MUNDO" : "Atenção! Podem existir criaturas "
-                " estranhas à solta",
-                "DESISTO" : "É muita pressão! Prefiro a DP"
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
         "CAMINHANDO": {
@@ -77,36 +63,34 @@ def carregar_cenarios():
                 "DESISTIR": "texto"
             }
         },
-        "CONHECER O NOVO MUNDO": {
-            "titulo": "UNIVERSO PARALELO",
-            "descricao": "Atenção: você foi levado para um lugar muito parecido "
-            "com o novo prédio do Insper! Mas não se iluda: o lugar está tomado"
-            " por monstros!",
+        "UNIVERSO PARALELO": {
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "PEGAR ELEVADOR" : "Ande devagar, pois o local está escuro.",
-                "RECEPCIONISTA" : "Aparenta ser uma boa criatura. Pegue informações com ele.",
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "PEGAR ELEVADOR": {
-            "titulo": "ELEVADOR DA MORTE",
-            "descricao": "Você está dentro do elevador, mas ele só consegue te"
-            " levar para o 3° andar, onde fica o FabAlien. Caso aperte outro botão,"
-            "o elevador despenca e vc perder o jogo. Mas, para seguir em frente, é necessário "
-            "acertar a pergunta: como se escreve, corretamente, o nome do professor"
-            " de desoft? ",
+        "ABRIGO": {
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
-                "FABYO AIRES" : "Será?",
-                "FABIO AYRES" : "Será?",
-                "DESISTO" : "Nome muito complexo!"
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "FABYO AIRES": { 
-            "titulo": "UMA PENA!",
-            "descricao": "Não foi dessa vez!",
+        "INSPER": { 
+            "titulo": "texto",
+            "descricao": "texto",
             "opcoes": { 
+                "OPÇÃO" : "texto",
+                "OPÇÃO" : "texto",
+                "DESISTIR" : "texto"
             } 
         },
-        "FABIO AYRES": { 
+        "BIBLIOTECA": { 
             "titulo": "texto",
             "descricao": "texto",
             "opcoes": { 
@@ -163,22 +147,15 @@ def carregar_cenarios():
 # FIM FUNÇÃO CERNÁRIOS
 
 # INÍCIO FUNÇAO MONSTROS
-def carrega_criaturas():
+def carrega_monstros():
     personagens = {
-            "TECNICO": { # jogador dentro do FabAlien
-                    "opçoes de ação": {
+            "tecnico do FabAlien": { # jogador dentro do FabAlien
+                    "opçoes de luta": {
                             "chute" : "Não é a melhor opção, mas é de fácil execução!",
                             "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"
-                    }
-                         }, 
-           "RECEPCIONISTA" : {
-                   "opçoes de ação" : {
-                           "OPCAO" : "TEXTO",
-                           "OPCAO" : "TEXTO"
-                           }
-                   }
-                }       
+                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}}
+                }
+            
     return personagens
 # FIM FUNÇÃO MONSTROS 
 
@@ -207,94 +184,53 @@ def main():
 
     enter2 = input(RED + "Aperte a tecla enter para continuar." + RESET) # Continuando o Jogo;
     print()
-    
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
-    personagens = carrega_criaturas()
+
     game_over = False
-    variavel = nome_cenario_atual    
-    #Looping
-    while not game_over: 
+    while not game_over:
+        cenario_atual = cenarios[nome_cenario_atual]
         
-        escolha = variavel
+        # Título do cenário atual;
+        titulo_cenario = cenarios[nome_cenario_atual]["titulo"] 
+        print(BLUE + titulo_cenario + RESET)
+        print(BLUE + "-"*len(titulo_cenario) + RESET)
         
-        while escolha in personagens:
-            titulo_personagem = personagens[escolha]["titulo"] 
-            print(BLUE + titulo_personagem + RESET)
-            print(BLUE + "-"*len(titulo_personagem) + RESET)
-            print(RED + personagens[escolha]["descricao"] + RESET)
-            opcoes = personagens[escolha]['opcoes']
-            if len(opcoes) == 0: # O jogo termina para o gamer;
-                print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
-                print()
-                game_over = True
+        # Descrição do cenário atual;
+        print(RED + cenarios[nome_cenario_atual]["descricao"] + RESET)
+        
+        # Opções do gamer no cenário atual;
+        opcoes = cenario_atual['opcoes']
+        if len(opcoes) == 0: # O jogo termina para o gamer;
+            print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
+            print()
+            game_over = True
             
+        else:
+            print()
+            print(RED + "Escolha sua opção:" + RESET)
+            print()
+
+            for escolha in opcoes:
+                print(RED + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
+                print()
+            
+            print(RED + "E então, o que vai fazer?!?" + RESET)
+            escolha = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
+            print()
+            
+            #O jogo continua para o gamer;
+            if escolha in opcoes:
+                nome_cenario_atual = escolha
+                
+            #O jogo termina para o gamer;  
             else:
                 print()
-                print(RED + "Escolha sua opção:" + RESET)
-
-                for alternativa in opcoes:
-                    print(RED + '{0}: {1}'.format(alternativa,opcoes[alternativa]) + RESET)
-                
-                print()
-                print(RED + "E então, o que vai fazer?!?" + RESET)
-                resposta = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
-                print()
-            
-                #O jogo continua para o gamer;
-                if resposta in opcoes:
-                    escolha = resposta
-                #O jogo termina para o gamer;  
-                else:
-                    print()
-                    print(RED + "Sua indecisão foi sua ruína!" + RESET)
-                    print()
-                    game_over = True
-
-                    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
-
-            
-        while escolha in cenarios:
-            cenario_atual = cenarios[escolha]
-            #personagem = personagens[nome_personagem]
-            # Título do cenário atual;
-            titulo_cenario = cenarios[escolha]["titulo"] 
-            print(BLUE + titulo_cenario + RESET)
-            print(BLUE + "-"*len(titulo_cenario) + RESET)
-        
-            # Descrição do cenário atual;
-            print(RED + cenarios[escolha]["descricao"] + RESET)
-        
-            # Opções do gamer no cenário atual;
-            opcoes = cenario_atual['opcoes']
-            if len(opcoes) == 0: # O jogo termina para o gamer;
-                print(RED + "Você chateou muito o Mestre Ayres. E ele não tem piedade." + RESET)
+                print(RED + "Sua indecisão foi sua ruína!" + RESET)
                 print()
                 game_over = True
-            
-            else:
-                print()
-                print(RED + "Escolha sua opção:" + RESET)
 
-                for alternativa in opcoes:
-                    print(RED + '{0}: {1}'.format(alternativa, opcoes[alternativa]) + RESET)
-                
-                print()
-                print(RED + "E então, o que vai fazer?!?" + RESET)
-                resposta = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
-                print()
-            
-                #O jogo continua para o gamer;
-                if resposta in opcoes:
-                    escolha = resposta
-                #O jogo termina para o gamer;  
-                else:
-                    print()
-                    print(RED + "Sua indecisão foi sua ruína!" + RESET)
-                    print()
-                    game_over = True
-
-                    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
+    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
 
 # Programa principal.
 if __name__ == "__main__":
