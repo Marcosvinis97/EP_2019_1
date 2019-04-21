@@ -50,25 +50,25 @@ def carregar_cenarios():
             "titulo": "A FENDA",
             "descricao": "Você pedalou tão rápido que acabou abrindo uma fenda no espaço-tempo, te levando para outro mundo!! Louco, não?!?",
             "opcoes": { 
-                "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Vou tentar encontrar uma maneira de sair daqui e entregar meu EP!!",
-                "DESISTO" : "Desisto o EP está perdido... Não tenho o que fazer, apenas esperar por socorro!"
+                "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Tente encontrar uma maneira de entregar seu EP!! Ou tente sair o mais rápido possível!!",
+                "DESISTO" : "Pesgar DP não deve ser tão ruim assim... Espere por socorro!"
             } 
         },
         "CORRENDO": {
             "titulo": "QUEM AVISA AMIGO É",
-            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, deseja continuar?? Depois não vai dizer que não aviser! rsrs",
+            "descricao": "Essa é uma escolha arriscada, pois há diversos alunos desaparecendo ao redor do Insper, sem explicação, deseja continuar?? Depois não vai dizer que não avisei! rsrs",
             "opcoes": {
                 "BIKE": "Você chegará a tempo no Insper, entretanto, provavelmente estará fedendo e o Mestre Ayres não gosta de alunos fedidos... ",
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
-        "UNIVERSO PARALELO": {
-            "titulo": "texto",
-            "descricao": "texto",
+        "CONHECER NOVO MUNDO": {
+            "titulo": "UNIVERSO PARALELO",
+            "descricao": "Atenção: Você foi levado para um lugar muito parecido com o prédio novo do Insper!! Mas não se iluda, você não está no seu mundo!",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez ele esteja aqui mesmo... Que tal subir até o andar dele para conferir...",
+                "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela ajudaria com informações? rsrs Cuidado!",
+                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
         "ABRIGO": {
@@ -240,4 +240,3 @@ def main():
 # Programa principal.
 if __name__ == "__main__":
     main()
-
