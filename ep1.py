@@ -88,38 +88,18 @@ def carregar_cenarios():
         },
         "FÁBIO AYRES": { 
             "titulo": "PARABÉNS",
-            "descricao": "Você sabe o nome do seu professor. É um bom começo.",
+            "descricao": "Você sabe o nome do seu professor. É um bom começo. Escolha um lugar para ir.",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
+                "SALA DO PROFESSOR" : "Essa opção te levará ao lugar onde seu professor está! Quem sabe o mestre Ayres possa te ajudar a salvar sua nota?!",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
-        "GARAGEM": { 
-            "titulo": "texto",
-            "descricao": "texto",
-            "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
-            } 
-        },
-        "REFEITORIO": { 
-            "titulo": "texto",
-            "descricao": "texto",
-            "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
-            } 
-        },
         "SALA DO PROFESSOR": {
-            "titulo": "texto",
-            "descricao": "texto",
+            "titulo": "AS APARÊNCIAS ENGANAM",
+            "descricao": "Você está na sala do Mestre Ayres e ele está distraído mexendo no seu notebook. ",
             "opcoes": { 
-                "OPÇÃO" : "texto",
-                "OPÇÃO" : "texto",
-                "DESISTIR" : "texto"
+                "ENTREGAR EP" : "Pode ser que sua nota seja garantida!",
+                "ELEVADOR" : "Volte ao lugar de onde veio.",
             } 
         },
         "DESISTO": { 
