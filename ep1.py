@@ -95,7 +95,7 @@ def carregar_cenarios():
                 " ele esteja aqui mesmo... Que tal subir até o andar dele para "
                 "conferir...",
                 "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela "
-                "ajudaria com informações? rsrs Cuidado!",
+                "ajudaria com informações? Cuidado!",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que "
                 "tal ficar na recepção mesmo... Esperando por ajuda."
             } 
@@ -116,32 +116,129 @@ def carregar_cenarios():
         },
         "FÁBIO AYRES": { 
             "titulo": "PARABÉNS",
-            "descricao": "Você sabe o nome do seu professor. É um bom começo. "
-            "Escolha um lugar para ir.",
+            "descricao": "Você conseguiu chegar ao 3° andar, onde fica o "
+            "FabAlien. Mas todo cuidado é pouco!",
             "opcoes": { 
-                "SALA DO PROFESSOR" : "A sala do Mestre Ayres é logo ali... "
-                "Que tal ver se ele está ali e finalmente entregar sua EP!! ",
+                "ENTRAR" : "Vá em frente! O tempo está quase acabando!",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal "
                 "ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
-        "SALA DO PROFESSOR": {
-            "titulo": "AS APARÊNCIAS ENGANAM",
-            "descricao": "Você está na sala do Mestre Ayres e ele está "
-            "distraído mexendo no seu notebook. ",
+             "ENTRAR": {
+            "titulo": "LUTE OU MORRA!",
+            "descricao": "Por essa você não esperava: o técnico do FabAlien "
+            "está empenhado em não te deixar entregar a EP a tempo. Você "
+            "precisa detê-lo!",
             "opcoes": { 
-                "ENTREGAR EP" : "Pode ser que sua nota seja garantida!",
-                "ELEVADOR" : "Volte ao lugar de onde veio.",
+                "RASGAR SEU JALECO" :"Você deixará ele sempre proteção!",
+                 "FUGIR": "Você perderá tempo e pode ficar com zero na EP",
+            } 
+        },
+         "RASGAR SEU JALECO": {
+            "titulo": "VOCÊ CONSEGUIU!",
+            "descricao": "Parabéns!! 10 pontos pela conquista! "
+            "A vitória está próxima! ",
+            "opcoes": { 
+                "MAQUINA 3D" : "Aquela máquina está chamando mais "
+                "atenção que as demais! O que será que tem nela...?",
+            } 
+        },
+           "MAQUINA 3D": {
+            "titulo": "UAU!",
+            "descricao": "O técnico estava trabalhando em um novo projeto e, "
+            "aparentemente, havia impresso uma outra fenda no espaço-tempo!",
+            "opcoes": {     
+             "ENTRAR NA FENDA" : "Não se sabe o que exatamente vai acontecer.",
+             "DESISTO" : "Tem nem perigo! Prefiro pegar DP." 
+            } 
+        },
+        "ENTRAR NA FENDA": {
+            "titulo": "ONDE ESTOU?",
+            "descricao": "Não sabemos ao certo, mas parece que você conseguiu "
+            "voltar à Terra e melhor ainda: a fenda te levou direto ao Insper!"
+            " Parabéns pela decisão! Você ganhou 8 pontos.",
+            "opcoes": {     
+             "SALA DOS PROFESSORES" : "Rápido!! O tempo está se esgotando!",
+             "SUJINHOS": "Hoje é sexta... O professor deve entender"
+            } 
+        },
+             "SALA DOS PROFESSORES": {
+            "titulo": "UFA!!",
+            "descricao": "Você chegou a tempo! O professor está lá sentado, "
+            "esperando ansiosamente pela sua EP. ",
+            "opcoes": {     
+             "ENTREGAR EP" : "Entregue enquanto há tempo!",
+             "OBSERVAR" : "Ele não se parece muito com o Mestre Ayres... Pense "
+             "bem antes de entregar a EP."
             } 
         },
             "ENTREGAR EP": {
-            "titulo": "VOCÊ MORREU!",
-            "descricao": "Infelizmente, esse mestre Ayres é na verdade um"
-            " monstro e fica mais forte a cada EP entregue! ",
+            "titulo": "AS APARÊNCIAS ENGANAM!",
+            "descricao": "O mestre Ayres não é quem parecia ser. A criatura era "
+            "monstro que se alimenta de EP'S. Você deixou ele mais forte!",
+            "opcoes": {     
+            } 
+        },
+           "OBSERVAR": {
+            "titulo": "ALGO DE ERRADO NÃO ESTÁ CERTO",
+            "descricao": "Sábia escolha! Porém, o professor notou sua presença!"
+            " Você não está na Terra. Está em outra dimensão e esse professor é"
+            "na verdade uma criatura faminta. Lute enquanto pode!",
+            "opcoes": {  
+            "ENTREGAR EP" : "Depois de tudo o que você passou, pode ser coisa da "
+            "sua cabeça...",
+            "NOTEBOOK" : "Quebre o notebook dele! Ele perde forças nesse ato."
+            
+            } 
+        },
+           "NOTEBOOK": {
+            "titulo": "VOCÊ DERROTOU A CRIATURA, MAS O TEMPO TE DERROTOU.",
+            "descricao": "UAU! Você voltou a sua casa, mas esqueceu que o tempo "
+            "é medido de forma diferente quando se está em outra dimensão... "
+            "Se passaram 50 anos desde aquele dia que você estava na sala assistindo "
+            "Netflix. Infelizmente, seu professor não aceita atrasos.",
+            "opcoes": {
+            } 
+        },
+         "SUJINHOS": {
+            "titulo": "QUE FEIO!",
+            "descricao": "Vai mesmo deixar o professor te esperando? ",
+            "opcoes": {     
+            } 
+        },
+         "FUGIR": {
+            "titulo": "FRACOTE!",
+            "descricao": "Te pegamos. Você não tem opção a não ser lutar! Você "
+            "perdeu 7 pontos por ser medroso.",
+            "opcoes": {     
+             "ENTRAR" : "Deixa de moleza."
+            } 
+        },
+            "RECEPCIONISTA": { 
+            "titulo": "QUE VENÇA O MELHOR!",
+            "descricao": "A recepcionista está com fome de humanos e você precisa"
+            "entrar no combate com ela agora para seguir em frente!",
+            "opcoes": { 
+                    "VOADORA" : "Dê uma voadora na recepcionista!",
+                    "CHUTAR" : "Chute o mais forte que conseguir!" 
+            } 
+        },
+            "VOADORA": { 
+            "titulo": "ISSO AÍ!",
+            "descricao": "Você acertou em cheio e ganhou 4 pontos! Agora a "
+            "recepcionista não será mais um problema.",
+            "opcoes": { 
+                    "ELEVADOR" : "Vá para o elevador e volte a conhecer onde "
+                    "você está!"
+            } 
+        },
+             "CHUTAR": { 
+            "titulo": "FRACOTE",
+            "descricao": "Você não estava forte suficiente.",
             "opcoes": { 
             } 
         },
-        "DESISTO": { 
+            "DESISTO": { 
             "titulo": "FRACOTE",
             "descricao": "Pobre jogador!",
             "opcoes": { 
@@ -163,25 +260,6 @@ def carregar_cenarios():
     nome_cenario_atual = "INICIO"
     return cenarios, nome_cenario_atual
 # FIM FUNÇÃO CERNÁRIOS
-
-# INÍCIO FUNÇAO MONSTROS
-def carrega_monstros():
-    personagens = {
-            "tecnico do FabAlien": { # jogador dentro do FabAlien
-                    "opçoes de luta": {
-                            "chute" : "Não é a melhor opção, mas é de fácil execução!",
-                            "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}
-            },
-            "Mestre Ayres": { # jogador dentro do FabAlien/poderes telepaticos
-                    "opçoes de luta": {
-                            "chute" : "Não é a melhor opção, mas é de fácil execução!",
-                            "rasgar seu jaleco": "Você deixará ele sempre proteção!",
-                            "fugir": "Você perderá tempo e pode ficar com zero na EP"}
-            }
-        }
-    return personagens
-# FIM FUNÇÃO MONSTROS 
 
 def main():
     BLUE  = "\033[1;34m"
@@ -210,7 +288,8 @@ def main():
     print()
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
-
+    pontuacao = 0
+    
     game_over = False
     while not game_over:
         cenario_atual = cenarios[nome_cenario_atual]
@@ -232,7 +311,7 @@ def main():
             game_over = True
             
         else:
-            print()
+            print("Pontuação = {0}".format(pontuacao))
             print(RED + "Escolha sua opção:" + RESET)
             print()
 
@@ -247,6 +326,16 @@ def main():
             #O jogo continua para o gamer;
             if escolha in opcoes:
                 nome_cenario_atual = escolha
+                if nome_cenario_atual == "RECEPCIONISTA":
+                    pontuacao += 4
+                if nome_cenario_atual == "RASGAR SEU JALECO":
+                    pontuacao += 10
+                if nome_cenario_atual == "ENTRAR NA FENDA":
+                    pontuacao += 8
+                if nome_cenario_atual == "FUGIR":
+                    pontuacao -= 7
+                if nome_cenario_atual == "SUJINHOS":
+                    pontuacao -= 2
                 
             #O jogo termina para o gamer;  
             else:
