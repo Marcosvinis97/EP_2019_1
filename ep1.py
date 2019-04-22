@@ -193,8 +193,8 @@ def carregar_cenarios():
         },
            "NOTEBOOK": {
             "titulo": "VOCÊ DERROTOU A CRIATURA, MAS O TEMPO TE DERROTOU.",
-            "descricao": "UAU! Você voltou a sua casa, mas esqueceu que o tempo "
-            "é medido de forma diferente quando se está em outra dimensão... "
+            "descricao": "UAU! Houve uma explosão e você voltou para sua casa,"
+            "mas esqueceu que o tempo é medido de forma diferente quando se está em outra dimensão... "
             "Se passaram 50 anos desde aquele dia que você estava na sala assistindo "
             "Netflix. Infelizmente, seu professor não aceita atrasos.",
             "opcoes": {
