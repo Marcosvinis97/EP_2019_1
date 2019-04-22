@@ -39,7 +39,7 @@ def carregar_cenarios():
                 "BIKE": "Você chegará a tempo no Insper, entretanto, "
                 "provavelmente estará fedendo e o Mestre Ayres não gosta de "
                 "alunos fedidos... ",
-                "CORRENDO": "Correndo você podera desviar do transito, "
+                "CORRENDO": "Correndo você podera desviar do trânsito, "
                 "entretanto, há boatos de ataques a corredores ao redor "
                 "do Insper...Vai arriscar?",   
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..." 
@@ -50,7 +50,7 @@ def carregar_cenarios():
             "descricao": "A cidade está um caos por conta das entregas dos "
             "EP's e o motorista do Uber escolheu o pior caminho possível. "
             "Se continuar assim, você chegara no Insper após o horário "
-            "limite da entrega.",
+            "limite da entrega... Você ainda tem chances!! Tem outras opções!",
             "opcoes": {
                 "BIKE": "Você chegará a tempo no Insper, entretanto, "
                 "provavelmente estará fedendo e o Mestre Ayres não gosta de "
@@ -63,14 +63,13 @@ def carregar_cenarios():
         },
         "BIKE": { 
             "titulo": "A FENDA",
-            "descricao": "Você pedalou tão rápido que acabou abrindo uma fenda "
-            "no espaço-tempo, te levando para outro mundo!! Louco, não?!?",
+            "descricao": "CARAMBAAAA!!!! Você pedalou tão rápido que acabou abrindo uma fenda "
+            "no espaço-tempo, te levando para OUTRA DIMENSÃO!!!! Louco, não?!? E agora, o que você vai fazer??",
             "opcoes": { 
                 "CONHECER NOVO MUNDO": "Que lugar é esse?!?! Tente encontrar "
-                "uma maneira de entregar seu EP!! Ou tente sair o mais rápido "
-                "possível!!",
+                "uma maneira de sair para entregar seu EP!!",
                 "DESISTO" : "Pesgar DP não deve ser tão ruim assim... Espere "
-                "por socorro!"
+                "por socorro ai mesmo, vão sentir sua falta em algum momento. Ou não... rsrsrs!"
             } 
         },
         "CORRENDO": {
@@ -79,6 +78,8 @@ def carregar_cenarios():
             " desaparecendo ao redor do Insper, sem explicação, "
             "deseja continuar?? Depois não vai dizer que não foi avisado!",
             "opcoes": {
+                "UBER": "Pode ser a opção mais rápida ou não, pois a cidade "
+                "está um caos neste dia de entrega... Vai arriscar?",
                 "BIKE": "Você chegará a tempo no Insper, entretanto, "
                 "provavelmente estará fedendo e o Mestre Ayres não gosta "
                 "de alunos fedidos... ",
@@ -89,14 +90,13 @@ def carregar_cenarios():
         "CONHECER NOVO MUNDO": {
             "titulo": "UNIVERSO PARALELO",
             "descricao": "Atenção: Você foi levado para um lugar muito parecido"
-            " com o prédio novo do Insper!! Mas não se iluda, você não está no "
-            "seu mundo!",
+            " com o prédio novo do Insper!! Será que o professor está ai?? O tempo está acabando!!",
             "opcoes": { 
                 "ELEVADOR" : "Será que o Mestre Ayres está neste prédio? Talvez"
                 " ele esteja aqui mesmo... Que tal subir até o andar dele para "
                 "conferir...",
                 "RECEPCIONISTA" : "Aparenta ser uma pessoa boa. Será que ela "
-                "ajudaria com informações? Cuidado!",
+                "ajudaria com informações?",
                 "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que "
                 "tal ficar na recepção mesmo... Esperando por ajuda."
             } 
@@ -125,7 +125,7 @@ def carregar_cenarios():
                 "ficar na recepção mesmo... Esperando por ajuda."
             } 
         },
-             "ENTRAR": {
+        "ENTRAR": {
             "titulo": "LUTE OU MORRA!",
             "descricao": "Por essa você não esperava: o técnico do FabAlien "
             "está empenhado em não te deixar entregar a EP a tempo. Você "
@@ -144,7 +144,7 @@ def carregar_cenarios():
                 "atenção que as demais! O que será que tem nela...?",
             } 
         },
-           "MAQUINA 3D": {
+         "MAQUINA 3D": {
             "titulo": "UAU!",
             "descricao": "O técnico estava trabalhando em um novo projeto e, "
             "aparentemente, havia impresso uma outra fenda no espaço-tempo!",
@@ -163,7 +163,7 @@ def carregar_cenarios():
              "SUJINHOS": "Hoje é sexta... O professor deve entender"
             } 
         },
-             "SALA DOS PROFESSORES": {
+        "SALA DOS PROFESSORES": {
             "titulo": "UFA!!",
             "descricao": "Você chegou a tempo! O professor está lá sentado, "
             "esperando ansiosamente pela sua EP. ",
@@ -173,14 +173,14 @@ def carregar_cenarios():
              "bem antes de entregar a EP."
             } 
         },
-            "ENTREGAR EP": {
+        "ENTREGAR EP": {
             "titulo": "AS APARÊNCIAS ENGANAM!",
             "descricao": "O mestre Ayres não é quem parecia ser. A criatura era "
             "monstro que se alimenta de EP'S. Você deixou ele mais forte!",
             "opcoes": {     
             } 
         },
-           "OBSERVAR": {
+        "OBSERVAR": {
             "titulo": "ALGO DE ERRADO NÃO ESTÁ CERTO",
             "descricao": "Sábia escolha! Porém, o professor notou sua presença!"
             " Você não está na Terra. Está em outra dimensão e esse professor é"
@@ -192,7 +192,7 @@ def carregar_cenarios():
             
             } 
         },
-           "NOTEBOOK": {
+        "NOTEBOOK": {
             "titulo": "VOCÊ DERROTOU A CRIATURA, MAS O TEMPO TE DERROTOU.",
             "descricao": "UAU! Houve uma explosão e você voltou para sua casa,"
             "mas esqueceu que o tempo é medido de forma diferente quando se está em outra dimensão... "
@@ -217,8 +217,8 @@ def carregar_cenarios():
         },
             "RECEPCIONISTA": { 
             "titulo": "QUE VENÇA O MELHOR!",
-            "descricao": "A recepcionista está com fome de humanos e você precisa"
-            "entrar no combate com ela agora para seguir em frente!",
+            "descricao": "A recepcionista está com FOME DE HUMANOS!!! Você precisa"
+            " entrar no combate com ela AGORA se quiser seguir em frente!",
             "opcoes": { 
                     "VOADORA" : "Dê uma voadora na recepcionista!",
                     "CHUTAR" : "Chute o mais forte que conseguir!" 
@@ -242,6 +242,12 @@ def carregar_cenarios():
             "DESISTO": { 
             "titulo": "FRACOTE",
             "descricao": "Pobre jogador!",
+            "opcoes": { 
+            } 
+        },
+        "CONTINUAR": { 
+            "titulo": "TEIMOSO!",
+            "descricao": "Você foi sequestrado por Técnicos do FabAlien, isso mesmo, FabAlien. Agora você sera cobaia para experiências com alunos que gostam de atrasos!",
             "opcoes": { 
             } 
         },
@@ -280,8 +286,8 @@ def main():
           " mensagens no grupo e isso poderia significar duas coisas: Perigo ou"
           " zoeira. Infelizmente, não era a segunda opção... Você leu as "
           "mensagens e lembrou que havia um EP para entregar para o seu Mestre, o professor Ayres! E não somente "
-          "isso: estava em casa e precisava chegar o quanto antes para entregar"
-          " seu trabalho, pois o professor não aceitaria atrasos." + RESET)
+          "isso: você estava em casa e precisava chegar O QUANTO ANTES no Insper para entregar seu EP,"
+          " pois o professor não aceitaria atrasos." + RESET)
     print()
     print(RED + "Boa sorte," + RESET, " {0}." .format(nome), RED + " Pois os desafios estão apenas começando..." + RESET)
     print()
