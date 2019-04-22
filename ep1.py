@@ -15,7 +15,7 @@ print(RED + "Qual é o seu nome?" + RESET)
 nome = input() # Indentificando o gamer;
 print()
 
-print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\nEstá "
+print(RED + "Bem-vindo(a)," + RESET, "{0}!".format(nome),RED + "\n\nEstá "
       "preparado(a) para uma grande aventura?!")
 print()
 print(RED + "Aproveite o jogo, mas tome cuidado com suas escolhas, pois elas "
@@ -82,6 +82,7 @@ def carregar_cenarios():
                 "BIKE": "Você chegará a tempo no Insper, entretanto, "
                 "provavelmente estará fedendo e o Mestre Ayres não gosta "
                 "de alunos fedidos... ",
+                "CONTINUAR": "Tenha noção de que fazer isso é extremamente arriscado!", 
                 "DESISTO": "Pegar DP não deve ser tão ruim assim..."
             }
         },
@@ -104,10 +105,10 @@ def carregar_cenarios():
             "titulo": "TUDO OU NADA",
             "descricao": "Você não devia ter feito isto... Neste momento você "
             "está dentro do elevador, mas ele só consegue te levar para o 3º "
-            "andar, onde fica o FabAlien. Entretanto, para a porta do elevador "
+            "andar, onde fica o FabAlien!?!. Entretanto, para a porta do elevador "
             "abrir é necessário acertar a pergunta: Como se escreve "
             "corretamente o nome do professor de DESOFT? Vale resaltar que caso"
-            " você erre a pergunta o elevador despenca...",
+            " você erre a pergunta o elevador despenca... rsrsrs",
             "opcoes": { 
                 "FABIO AYRES" : "Será?",
                 "FÁBIO AIRES" : "Será?",
@@ -264,6 +265,7 @@ def carregar_cenarios():
 def main():
     BLUE  = "\033[1;34m"
     RED   = "\033[1;31m" 
+    GREEN = "\033[0;32m"
     RESET = "\033[0;0m"
     
     # Contextualizando o início do jogo para o gamer;        
@@ -311,12 +313,14 @@ def main():
             game_over = True
             
         else:
+            print()
             print("Pontuação = {0}".format(pontuacao))
+            print()
             print(RED + "Escolha sua opção:" + RESET)
             print()
 
             for escolha in opcoes:
-                print(RED + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
+                print(GREEN + '{0}: {1}'.format(escolha, opcoes[escolha]) + RESET)
                 print()
             
             print(RED + "E então, o que vai fazer?!?" + RESET)
