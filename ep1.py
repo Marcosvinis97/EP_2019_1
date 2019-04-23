@@ -26,8 +26,8 @@ enter = input(RED + "Aperte a tecla enter para continuar." + RESET)
 print()
 # FIM DA INTRODUÇÃO
 
-# INÍCIO FUNÇÃO CENÁRIOS
-def carregar_cenarios():
+# INÍCIO FUNÇÃO CENÁRIOS/PERSONAGENS
+def carregar_cenarios_personagens():
     cenarios = {
         "INICIO": {
             "titulo": "É HORA DE DAR NO PÉ",
@@ -264,8 +264,9 @@ def carregar_cenarios():
     }
     nome_cenario_atual = "INICIO"
     return cenarios, nome_cenario_atual
-# FIM FUNÇÃO CERNÁRIOS
+# FIM FUNÇÃO CERNÁRIOS/PERSONAGENS
 
+# INÍCIO MAIN
 def main():
     BLUE  = "\033[1;34m"
     RED   = "\033[1;31m" 
@@ -294,7 +295,7 @@ def main():
     print()
     # Dicionário - Início;
     cenarios, nome_cenario_atual = carregar_cenarios()
-    pontuacao = 0
+    forca = 0
     
     game_over = False
     while not game_over:
@@ -318,7 +319,7 @@ def main():
             
         else:
             print()
-            print("Pontuação = {0}".format(pontuacao))
+            print("Força = {0}".format(forca))
             print()
             print(RED + "Escolha sua opção:" + RESET)
             print()
@@ -331,19 +332,26 @@ def main():
             escolha = input(RED + "Digite sua escolha: " + RESET) # Decisão do gamer;
             print()
             
-            #O jogo continua para o gamer;
+          #O jogo continua para o gamer;
             if escolha in opcoes:
                 nome_cenario_atual = escolha
                 if nome_cenario_atual == "RECEPCIONISTA":
-                    pontuacao += 4
+                    forca += 4
                 if nome_cenario_atual == "RASGAR SEU JALECO":
-                    pontuacao += 10
+                    forca += 10
                 if nome_cenario_atual == "ENTRAR NA FENDA":
-                    pontuacao += 8
+                    forca += 8
+                
                 if nome_cenario_atual == "FUGIR":
-                    pontuacao -= 7
+                    forca -= 7
+                    if forca <= 0:
+                        break     
                 if nome_cenario_atual == "SUJINHOS":
-                    pontuacao -= 2
+                    forca -= 2
+                    
+                if nome_cenario_atual == "NOTEBOOK":
+                    if forca <= 20:
+                        break
                 
             #O jogo termina para o gamer;  
             else:
@@ -351,9 +359,14 @@ def main():
                 print(RED + "Sua indecisão foi sua ruína!" + RESET)
                 print()
                 game_over = True
-
-    print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
-
+                
+    if forca <= 20:
+        print("Faltou força para seguir adiante! Você morreu.")
+   
+    else:
+        print(RED + "Infelizmente" + RESET, "{0}," .format(nome), RED + "você morreu!" + RESET)
+#fim MAIN
+        
 # Programa principal.
 if __name__ == "__main__":
     main()
