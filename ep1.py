@@ -138,16 +138,17 @@ def carregar_cenarios():
          "RASGAR SEU JALECO": {
             "titulo": "VOCÊ CONSEGUIU!",
             "descricao": "Parabéns!! 10 pontos pela conquista! "
-                         "A vitória está próxima! ",
+                         "A vitória está próxima! Bora entregar esse EP!!! ",
             "opcoes": { 
-                "MAQUINA 3D" : "Aquela máquina está chamando mais "
-                               "atenção que as demais! O que será que tem nela...?",
+                "MAQUINA 3D" : "A máquina 3D a sua frente pode lhe ajudar a resolver esse problemão!!! Que tal arriscar??",
+                "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal "
+                             "ficar na recepção mesmo... Esperando por ajuda.",
             } 
         },
          "MAQUINA 3D": {
             "titulo": "UAU!",
             "descricao": "O técnico estava trabalhando em um novo projeto e, "
-            "aparentemente, havia impresso uma outra fenda no espaço-tempo!",
+                         "aparentemente, havia impresso uma outra fenda no espaço-tempo!",
             "opcoes": {     
                     "ENTRAR NA FENDA" : "Não se sabe o que exatamente vai acontecer.",
                     "DESISTO" : "Tem nem perigo! Prefiro pegar DP." 
@@ -156,68 +157,63 @@ def carregar_cenarios():
         "ENTRAR NA FENDA": {
             "titulo": "ONDE ESTOU?",
             "descricao": "Não sabemos ao certo, mas parece que você conseguiu "
-            "voltar à Terra e melhor ainda: a fenda te levou direto ao Insper!"
-            " Parabéns pela decisão! Você ganhou 8 pontos.",
+                         "voltar à Terra e melhor ainda: a fenda te levou direto ao Insper!"
+                         "Parabéns pela sábia decisão! Você ganhou 8 pontos.",
             "opcoes": {     
                     "SALA DOS PROFESSORES" : "Rápido!! O tempo está se esgotando!",
-                    "SUJINHOS": "Hoje é sexta... O professor deve entender"
+                    "SUJINHOS": "Pegar DP não deve ser tão ruim assim...Hoje é sexta... O professor deve entender"
             } 
         },
         "SALA DOS PROFESSORES": {
             "titulo": "UFA!!",
             "descricao": "Você chegou a tempo! O professor está lá sentado, "
-            "esperando ansiosamente pela sua EP. ",
+                         "esperando ansiosamente pela sua EP. ",
             "opcoes": {     
                     "ENTREGAR EP" : "Entregue enquanto há tempo!",
                     "OBSERVAR" : "Ele não se parece muito com o Mestre Ayres... Pense "
-                                "bem antes de entregar a EP."
+                                 "bem antes de entregar a EP.",
+                    "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Vou sair daqui e ir para o sujinhos!!"
             } 
         },
         "ENTREGAR EP": {
             "titulo": "AS APARÊNCIAS ENGANAM!",
-            "descricao": "O mestre Ayres não é quem parecia ser. A criatura era "
-            "monstro que se alimenta de EP'S. Você deixou ele mais forte!",
+            "descricao": "O Mestre Ayres não é quem parecia ser. Você foi ENGANADO sobre o prazo da EP, ele já se foi.... Não só isso.... ",
             "opcoes": {     
             } 
         },
         "OBSERVAR": {
             "titulo": "ALGO DE ERRADO NÃO ESTÁ CERTO",
-            "descricao": "Sábia escolha! Porém, o professor notou sua presença!"
-            " Você não está na Terra. Está em outra dimensão e esse professor é"
-            "na verdade uma criatura faminta. Lute enquanto pode!",
+            "descricao": "Sábia escolha! Porém, o professor notou sua presença! E parece EXTREMAMENTE ZANGADO, o que não é comum do Mestre Ayres... O que você vai fazer agora???",
             "opcoes": {  
                     "ENTREGAR EP" : "Depois de tudo o que você passou, pode ser coisa da "
-                        "sua cabeça...",
-                    "NOTEBOOK" : "Quebre o notebook dele! Ele perde forças nesse ato."
+                                    "sua cabeça... Entregue a ele sua EP!!",
+                    "NOTEBOOK" : "Quebre o notebook na cabeça dele! Se não for seu professor você se tornará um herói para o INSPER!"
             
             } 
         },
         "NOTEBOOK": {
-            "titulo": "VOCÊ DERROTOU A CRIATURA, MAS O TEMPO TE DERROTOU.",
-            "descricao": "UAU! Houve uma explosão e você voltou para sua casa,"
-            "mas esqueceu que o tempo é medido de forma diferente quando se está em outra dimensão... "
-            "Se passaram 50 anos desde aquele dia que você estava na sala assistindo "
-            "Netflix. Infelizmente, seu professor não aceita atrasos.",
+            "titulo": "VOCÊ CONSEGUIU, MAS O TEMPO TE DERROTOU.",
+            "descricao": "UAU! Você derrotou a estranha criatura que queria se passar pelo Mestre Ayres....Entretanto você perdeu seu prazo..........",
             "opcoes": {
             } 
         },
          "SUJINHOS": {
             "titulo": "QUE FEIO!",
-            "descricao": "Vai mesmo deixar o professor te esperando? ",
+            "descricao": "Pobre aluno, achou mesmo que o Mestre Ayres iria entender?",
             "opcoes": {     
             } 
         },
          "FUGIR": {
             "titulo": "FRACOTE!",
             "descricao": "Ele te pegou!! Você NÃO tem opção a não ser LUTAR! Você "
-            "perdeu 7 pontos por ser medroso.",
+                         "perdeu 7 pontos por ser medroso.",
             "opcoes": {     
                     "RASGAR SEU JALECO" : "É agora ou nunca!!!"
             } 
         },
         "RECEPCIONISTA": { 
             "titulo": "QUE VENÇA O MELHOR!",
-            "descricao": "A recepcionista está com FOME DE HUMANOS!!! Você precisa"
+            "descricao": "A recepcionista está com FOME DE HUMANOS!!! Isso mesmo, ela quer te devorar!!! Você precisa"
             " entrar no combate com ela AGORA se quiser seguir em frente!",
             "opcoes": { 
                     "VOADORA" : "Dê uma voadora na recepcionista!",
@@ -227,15 +223,17 @@ def carregar_cenarios():
         "VOADORA": { 
             "titulo": "ISSO AÍ!",
             "descricao": "Você acertou em cheio e ganhou 4 pontos! Agora a "
-            "recepcionista não será mais um problema.",
+                         "recepcionista não será mais um problema.",
             "opcoes": { 
                     "ELEVADOR" : "Vá para o elevador e volte a conhecer onde "
-                    "você está!"
+                    "você está!",
+                    "DESISTIR" : "Pegar DP não deve ser tão ruim assim. Que tal "
+                             "ficar na recepção mesmo... Esperando por ajuda.",
             } 
         },
         "CHUTAR": { 
             "titulo": "FRACOTE",
-            "descricao": "Você não estava forte suficiente.",
+            "descricao": "Você não estava forte suficiente. A recepcionista o deteu e você perdeu o prazo. Se não fosse o bastante....",
             "opcoes": { 
             } 
         },
